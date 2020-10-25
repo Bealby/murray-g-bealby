@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
 body{
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
   margin: 0px;
   padding: 0px;
 }
-.container .image{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+
+.desktop-nav{
+    background-color:red;
 }
+
 .container .menu-icon{
     position: absolute;
     color: red;
@@ -16,6 +20,7 @@ body{
     cursor: pointer;
     z-index: 1;
 }
+
 .menu-container{
   height: 0%;
   width: 100%;
