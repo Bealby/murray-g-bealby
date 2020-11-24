@@ -133,3 +133,9 @@ body{
     letter-spacing: 3px;
     color: rgb(64, 64, 64);
 }
+
+/*---Navbar Boxes---*/
+
+.fa-home .fa-graduation-cap .fa-commenting-o .fa-users .fa-github{
+    color: rgb(255, 255, 255);
+}
