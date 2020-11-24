@@ -29,6 +29,36 @@ body{
     color: rgb(64, 64, 64);
 }
 
+/*---Navbar---*/
+
+.navbar-font a{
+    font-weight:700;
+    font-size: 20px;
+    color: rgb(255, 255, 255) !important;
+    letter-spacing: 2px;
+}
+
+/*---Navbar Boxes---*/
+
+.home-box{
+    background-color:rgb(174,106,188);
+}
+
+.resume-box{
+    background-color:rgb(188,174,106);
+}
+
+.contact-box{
+    background-color:rgb(106,161,188);
+}
+
+.interests-box{
+   background-color:rgb(106,188,133);
+}
+
+.github-box{
+   background-color:rgb(106,120,188);
+}
 
 /*---Navbar Overlay---*/
 
@@ -89,3 +119,4 @@ body{
   z-index: 1;
   cursor: pointer;
 }
+
