@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*---Navbar Overlay---*/
+
 body{
   font-family: Roboto, sans-serif;
   font-weight: 300;
   margin: 0px;
   padding: 0px;
 }
+
+/*---Header---*/
+
+.header{
+    background-color:rgb(106, 188, 174);
+}
+
+
+/*---Navbar Overlay---*/
 
 .desktop-nav{
     background-color:red;
