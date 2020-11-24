@@ -12,7 +12,7 @@ body{
 /*---Header---*/
 
 .header{
-    background-color:rgb(106, 188, 174);
+    background-color:rgb(107, 189, 174);
 }
 
 .header-name{
@@ -41,7 +41,7 @@ body{
 /*---Navbar Color---*/
 
 .navbar-color{
-    background-color:rgb(106, 188, 174);
+    background-color:rgb(107, 189, 174);
 }
 
 /*---Navbar Boxes---*/
@@ -129,14 +129,14 @@ body{
 /*---Section---*/
 
 .section-font{
-    font-weight:700;
-    letter-spacing: 1px;
-    font-size:20px;
-    color: rgb(64, 64, 64);
+    font-weight:700 !important;
+    font-size: 25px !important;
+    letter-spacing: 3px !important;
+    color: rgb(107, 189, 174);;
 }
 
 .section-border{
-    border-right-color:rgb(106, 188, 174);
+    border-right-color:rgb(107, 189, 174);
     border-right-style: solid;
 }
 
