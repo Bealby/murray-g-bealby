@@ -137,7 +137,7 @@ body{
 
 .section-border{
     border-right-color:rgb(106, 188, 174);
-    border-style: solid;
+    border-right-style: solid;
 }
 
 /*---Navbar Boxes---*/
@@ -150,5 +150,11 @@ body{
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
+}
+
+/*---Block---*/
+
+.block{
+    height:40px;
 }
 
