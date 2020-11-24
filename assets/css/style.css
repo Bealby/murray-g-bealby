@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,900|Exo:100,200,300,400,500,600,700');
 
 /*---Navbar Overlay---*/
 
@@ -13,6 +13,20 @@ body{
 
 .header{
     background-color:rgb(106, 188, 174);
+}
+
+.header-name{
+    font-weight:700;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.header-role{
+    font-weight:700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(64, 64, 64);
 }
 
 
