@@ -38,6 +38,12 @@ body{
     letter-spacing: 2px;
 }
 
+/*---Navbar Color---*/
+
+.navbar-color{
+    background-color:rgb(106, 188, 174);
+}
+
 /*---Navbar Boxes---*/
 
 .home-box{
@@ -120,3 +126,10 @@ body{
   cursor: pointer;
 }
 
+/*---Section---*/
+
+.section-font{
+    font-weight:700;
+    letter-spacing: 3px;
+    color: rgb(64, 64, 64);
+}
