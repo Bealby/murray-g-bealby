@@ -139,3 +139,10 @@ body{
 .fa-home .fa-graduation-cap .fa-commenting-o .fa-users .fa-github{
     color: rgb(255, 255, 255);
 }
+
+/*---Hover---*/
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
