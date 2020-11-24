@@ -130,8 +130,14 @@ body{
 
 .section-font{
     font-weight:700;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    font-size:20px;
     color: rgb(64, 64, 64);
+}
+
+.section-border{
+    border-right-color:rgb(106, 188, 174);
+    border-style: solid;
 }
 
 /*---Navbar Boxes---*/
