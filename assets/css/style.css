@@ -16,15 +16,18 @@ body{
 
 .header-name{
     font-weight:700;
-    font-size: 45px;
+    font-size: 35px;
     letter-spacing: 3px;
     color: rgb(255, 255, 255);
+    padding-top:1rem;
+    margin-bottom:0.7rem;
 }
 
 .header-role{
     font-weight:700;
     font-size: 20px;
     letter-spacing: 2px;
+    margin-bottom:0px;
     color: rgb(64, 64, 64);
 }
 
@@ -67,18 +70,11 @@ body{
 
 /*---Navbar Overlay---*/
 
-.desktop-nav{
-    background-color:red;
-}
-
-.container .menu-icon{
-    position: absolute;
-    color: red;
+.menu-icon{
+    color:rgb(255, 255, 255);
     font-size: 30px;
-    right: 42px;
-    top: 24px;
     cursor: pointer;
-    z-index: 1;
+    background-color:rgb(109, 189, 174);
 }
 
 .menu-container{
@@ -173,4 +169,23 @@ footer{
     color: #fafafa;
     min-height: 100px;
     margin: 0;
+}
+
+/*---Media Queries---*/
+
+@media(min-width: 991px) {
+    .header-name{
+        font-weight:700;
+        font-size: 45px;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+        padding-top:3rem;
+        }
+
+    .header-role{
+        font-weight:700;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: rgb(64, 64, 64);
+        }
 }
