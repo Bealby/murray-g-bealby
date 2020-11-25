@@ -11,7 +11,7 @@ body{
 /*---Header---*/
 
 .header{
-    background-color:rgb(107, 189, 174);
+    background-color:rgb(109, 189, 174);
 }
 
 .header-name{
@@ -40,7 +40,7 @@ body{
 /*---Navbar Color---*/
 
 .navbar-color{
-    background-color:rgb(107, 189, 174);
+    background-color:rgb(109, 189, 174);
 }
 
 /*---Navbar Boxes---*/
@@ -135,7 +135,7 @@ body{
 }
 
 .section-border{
-    border-right-color:rgb(107, 189, 174);
+    border-right-color:rgb(109, 189, 174);
     border-right-style: solid;
 }
 
@@ -166,3 +166,11 @@ body{
     height:40px;
 }
 
+/*---Footer---*/
+
+footer{
+    background-color:rgb(109, 189, 174);
+    color: #fafafa;
+    min-height: 100px;
+    margin: 0;
+}
