@@ -140,7 +140,7 @@ body{
 }
 
 .section-content{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align:justify;
     color: rgb(64, 64, 64);
 }
@@ -176,6 +176,10 @@ footer{
 
 .fa-download{
         color:rgb(109, 189, 174);
+}
+
+.fa-download:hover{
+        color:rgb(109, 189, 174, 0.6);
 }
 
 
