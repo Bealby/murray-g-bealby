@@ -141,6 +141,7 @@ body{
 
 .section-content{
     letter-spacing: 2px;
+    text-align:justify;
     color: rgb(64, 64, 64);
 }
 
@@ -187,5 +188,6 @@ footer{
         font-size: 20px;
         letter-spacing: 2px;
         color: rgb(64, 64, 64);
+        margin-bottom:1rem;
         }
 }
