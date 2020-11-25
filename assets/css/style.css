@@ -72,7 +72,7 @@ body{
 
 .menu-icon{
     color:rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     background-color:rgb(109, 189, 174);
 }
@@ -100,11 +100,12 @@ body{
 .menu-content a{
   padding: 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 30px;
   color: white;
   display: block;
   font-family: sans-serif;
   transition: .3s ease-in-out;
+  font-weight:700;
 }
 
 .menu-content a:hover{
