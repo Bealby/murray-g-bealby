@@ -140,6 +140,10 @@ body{
     border-right-style: solid;
 }
 
+.section-title-padding{
+    padding-top:3px;
+}
+
 /*---Navbar Boxes---*/
 
 .fa-home .fa-graduation-cap .fa-commenting-o .fa-users .fa-github{
