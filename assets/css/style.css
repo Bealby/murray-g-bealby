@@ -4,7 +4,6 @@
 
 body{
   font-family: Roboto, sans-serif;
-  font-weight: 300;
   margin: 0px;
   padding: 0px;
 }
@@ -142,6 +141,11 @@ body{
 
 .section-title-padding{
     padding-top:3px;
+}
+
+.section-content{
+    letter-spacing: 2px;
+    color: rgb(64, 64, 64);
 }
 
 /*---Navbar Boxes---*/
