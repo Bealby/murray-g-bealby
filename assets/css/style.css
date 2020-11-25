@@ -172,6 +172,13 @@ footer{
     margin: 0;
 }
 
+/*---Font Awesome Icons---*/
+
+.fa-download{
+        color:rgb(109, 189, 174);
+}
+
+
 /*---Media Queries---*/
 
 @media(min-width: 991px) {
