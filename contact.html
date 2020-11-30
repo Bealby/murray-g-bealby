@@ -209,10 +209,11 @@
                 <!---2nd Section-->
                 <div class="col-8 pt-3 pl-5">
                     <div class="row section-font">
-                        <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
-                            <input type="text" name="name" class="form-control mt-3 form-fields" id="fullname" placeholder="Name" required />
-                            <input type="email" name="emailaddress" class="form-control mt-3 form-fields" id="emailaddress" placeholder="Email" required />
-                            <textarea rows="5" name="comment" class="form-control mt-3 form-fields" id="comment" placeholder="Comment" required></textarea>
+                        <div class="col-8">
+                        <form onsubmit="return sendMail(this);" id="myForm">
+                            <input type="text" name="name" class="form-control mt-3" id="fullname" placeholder="Name" required />
+                            <input type="email" name="emailaddress" class="form-control mt-3" id="emailaddress" placeholder="Email" required />
+                            <textarea rows="5" name="comment" class="form-control mt-3" id="comment" placeholder="Comment" required></textarea>
 
                             <div class="container pt-3">
                                 <div class="row">
@@ -222,6 +223,7 @@
                                 </div>
                             </div>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>
