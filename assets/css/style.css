@@ -208,6 +208,11 @@ body{
     height:40px;
 }
 
+/*---Download CV Remove underline---*/
+.decoration a{
+    text-decoration:none !important;
+}
+
 /*---Image Cards---*/
 
 .card{
