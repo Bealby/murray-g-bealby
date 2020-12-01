@@ -143,6 +143,13 @@ body{
     font-weight:700 !important;
     font-size: 25px !important;
     letter-spacing: 3px !important;
+    color: rgb(107, 189, 174);
+}
+
+.section-font-mb{
+    font-weight:700 !important;
+    font-size: 25px !important;
+    letter-spacing: 3px !important;
     color: rgb(107, 189, 174);;
 }
 
@@ -158,6 +165,11 @@ body{
 .section-content{
     letter-spacing: 1px;
     text-align:justify;
+    color: rgb(64, 64, 64);
+}
+
+.section-content-mb{
+    text-align:left;
     color: rgb(64, 64, 64);
 }
 

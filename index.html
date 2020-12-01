@@ -12,8 +12,6 @@
     </head>
 
     <body>
-
-
         <!---Header - Mobile -->
         <div class="container-fluid d-xl-none">
             <div class="row header">
@@ -26,7 +24,7 @@
 
         <!---Mobile Toggle-->
 
-        <div class="container-fluid d-xl-none">
+        <div class="container-fluid d-xl-none sticky-top">
             <div class="row menu-icon text-center">
                 <div class="col">
                     <span onclick="openMenu()">&#9776;</span>
@@ -48,12 +46,12 @@
         <!---Navbar-->
 
         <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
-                <div class="row header">
-                    <div class="col text-center">
-                        <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
-                        <p class="header-role">Full Stack Web Developer</p>
-                    </div>
+            <div class="row header">
+                <div class="col text-center">
+                    <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
+                    <p class="header-role">Full Stack Web Developer</p>
                 </div>
+            </div>
             <div class="navbar-collapse navbar-main" id="navbarNav">
                 <ul class="navbar-nav mx-auto my-auto navbar-font">
                     <li class="nav-item active">
@@ -130,8 +128,8 @@
         <!---Desktop-->
         <div class="container-fluid d-none d-xl-block">
             <div class="row">
-                <!---Desktop - Achievments-->
-                <div class="col-3 section-border pt-3 pl-5">
+                <!---Desktop - Achievements-->
+                <div class="col-xl-3 section-border pt-3 pl-5">
                     <div class="row section-font">
                         <div class="col-2">
                             <i class="fa fa-trophy fa-1x" aria-hidden="true"></i>
@@ -172,7 +170,7 @@
                     </div>
                 </div>
                 <!---Desktop - Profile-->
-                <div class="col-9 pt-3 pl-5">
+                <div class="col-xl-9 pt-3 pl-5">
                     <div class="row section-font">
                         <div class="col-1">
                             <i class="fa fa-user-alt fa-1x" aria-hidden="true"></i>
@@ -206,16 +204,99 @@
                         <div class="col-6 section-content pr-5">
                             <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Download CV</p>
                             <p class="pt-2 pb-2" style="font-weight: 300; font-size: 13px;">
-                                A printable version of my CV can be found here.
-                            </p>
-                            <p class="text-center">
-                                <a href="assets/cv/murray-bealby.pdf" target="_blank"><i class="fa fa-download fa-3x" aria-hidden="true"></i></a>
+                                A printable version of my CV can be found here.<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;&ensp;<i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!---Mobile-->
+        <div class="container-fluid d-xl-none">
+            <div class="row">
+                <!---Mobile - Profile-->
+                <div class="col-12 pt-3 pl-5">
+                    <div class="row section-font-mb">
+                        <div class="col-1">
+                            <i class="fa fa-user-alt fa-1x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-1 pl-4 section-title-padding">
+                            <p class="text-uppercase">About</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 section-content-mb pr-5">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">What do I do?</p>
+                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
+                                I am a qualified Full Stack Web Developer that is highly driven and motivated, who readily adapts to different situations and thrives on delivery, success and attention to detail.
+                            </p>
+                        </div>
+                        <div class="col-12 section-content-mb pr-5">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">What is my background</p>
+                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
+                                Building on my 15 years experience working for International Companies in the Business Financial sector, I seek to develop my new skill set and add value.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 section-content-mb pr-5">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Why hire me?</p>
+                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
+                                I am an excellent team player, who is also self-motivated and self-reliant, who continually seeks to improve and develop designs and systems. I know the of effectivenees of design, which combined with
+                                application speed, security and reliability create a great user experience.
+                            </p>
+                        </div>
+                        <div class="col-12 section-content-mb pr-5">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Download CV</p>
+                            <p class="pt-2 pb-2" style="font-weight: 300; font-size: 15px;">
+                                A printable CV version can be found here<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;&ensp;<i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!---Mobile - Achievements-->
+            <div class="col-12 pt-3 pl-5 mt-4">
+                <div class="row section-font">
+                    <div class="col-2">
+                        <i class="fa fa-trophy fa-1x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-2 pl-0 section-title-padding">
+                        <p class="text-uppercase">Achievements</p>
+                    </div>
+                </div>
+                <div class="row mt-3 pr-5">
+                    <div class="col-12 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Code Institute - 2020</p>
+                        <p style="font-weight: 300; font-size: 15px;">Full Stack Web Developer</p>
+                    </div>
+                    <div class="col-12 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Berlitz - 2018</p>
+                        <p style="font-weight: 300; font-size: 15px;">Swedish - Level 2</p>
+                    </div>
+                    <div class="col-12 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Umeå University - 2011</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Web Design Basics</p>
+                        <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">Usability and Accessibility</p>
+                        <p style="font-weight: 300; font-size: 13px;">(HTML, CSS)</p>
+                    </div>
+                    <div class="col-12 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Cambridge School - 2005</p>
+                        <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">CELTA</p>
+                        <p style="font-weight: 300; font-size: 13px;">(Certificate in English Language Teaching to Adults)</p>
+                    </div>
+                    <div class="col-12 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Coventry University - 2001</p>
+                        <p style="font-weight: 300; font-size: 15px;">BA (Honours) Financial Economics, 2:1</p>
+                    </div>
+                    <div class="col-12 section-content-mb mb-5">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Steyning Grammar School - 1997</p>
+                        <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">A-Levels:</p>
+                        <p style="font-weight: 300; font-size: 13px;">Mathematics, Business Studies, Physics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
 
         <!---Block-->
 
