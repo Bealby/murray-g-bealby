@@ -208,6 +208,11 @@ body{
     height:40px;
 }
 
+.card{
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0, 0, 0, 1) !important;
+}
+
+
 /*---Footer---*/
 
 footer{
