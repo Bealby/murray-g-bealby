@@ -208,8 +208,14 @@ body{
     height:40px;
 }
 
+/*---Image Cards---*/
+
 .card{
     box-shadow: 0rem 0rem 0.5rem 0rem rgb(0, 0, 0, 1) !important;
+}
+
+.card-margin-mb{
+    margin-bottom:3.5rem;
 }
 
 
