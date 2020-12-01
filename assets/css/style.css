@@ -109,7 +109,6 @@ body{
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .menu-content a{
@@ -129,7 +128,7 @@ body{
 
 .menu-container .closebtn{
   position: absolute;
-  top: 70px;
+  top: 24px;
   right: 48px;
   font-size: 50px;
   color: white;
