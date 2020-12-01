@@ -218,6 +218,11 @@ body{
     margin-bottom:3.5rem;
 }
 
+.card-font{
+    font-weight: 300;
+    font-size: 20px;
+}
+
 
 /*---Footer---*/
 
@@ -238,5 +243,12 @@ footer{
         color:rgb(109, 189, 174, 0.6);
 }
 
-
 /*---Media Queries---*/
+
+/*---Larger font for smaller devices. For a better/ clearer read---*/
+@media (min-width: 991px) {
+.card-font{
+    font-weight: 300;
+    font-size: 15px;
+    }
+}
