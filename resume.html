@@ -12,9 +12,8 @@
     </head>
 
     <body>
-
         <!---Header - Mobile -->
-        <div class="container-fluid d-xl-none sticky-top">
+        <div class="container-fluid d-xl-none">
             <div class="row header">
                 <div class="col text-center">
                     <p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p>
@@ -25,7 +24,7 @@
 
         <!---Mobile Toggle-->
 
-        <div class="container-fluid d-xl-none">
+        <div class="container-fluid d-xl-none sticky-top">
             <div class="row menu-icon text-center">
                 <div class="col">
                     <span onclick="openMenu()">&#9776;</span>
@@ -47,12 +46,12 @@
         <!---Navbar-->
 
         <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
-                <div class="row header">
-                    <div class="col text-center">
-                        <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
-                        <p class="header-role">Full Stack Web Developer</p>
-                    </div>
+            <div class="row header">
+                <div class="col text-center">
+                    <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
+                    <p class="header-role">Full Stack Web Developer</p>
                 </div>
+            </div>
             <div class="navbar-collapse navbar-main" id="navbarNav">
                 <ul class="navbar-nav mx-auto my-auto navbar-font">
                     <li class="nav-item active">
@@ -227,9 +226,7 @@
                                         <h2 class="mb-0">
                                             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="flase" aria-controls="collapseOne">
                                                 <div class="row">
-                                                    <div class="col-6 work-title mt-2">
-                                                       <i class="fas fa-chevron-down"></i>&ensp;&ensp;2013 – 2019:&ensp;&ensp;<span style="font-weight: 400;">MICHELIN NORDIC AB</span>
-                                                    </div>
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2013 – 2019:&ensp;&ensp;<span style="font-weight: 400;">MICHELIN NORDIC AB</span></div>
                                                     <div class="col-6 text-right">
                                                         <img src="assets/images/michelin.png" alt="Michelin Logo" width="120" />
                                                     </div>
@@ -265,9 +262,7 @@
                                         <h2 class="mb-0">
                                             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                 <div class="row">
-                                                    <div class="col-6 work-title mt-2">
-                                                        <i class="fas fa-chevron-down"></i>&ensp;&ensp;2011 – 2013:&ensp;&ensp;<span style="font-weight: 400;">ERICSSON AB</span>
-                                                    </div>
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2011 – 2013:&ensp;&ensp;<span style="font-weight: 400;">ERICSSON AB</span></div>
                                                     <div class="col-6 text-right">
                                                         <img src="assets/images/ericcson.png" alt="Michellin Logo" width="60" />
                                                     </div>
@@ -294,9 +289,7 @@
                                         <h2 class="mb-0">
                                             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                                 <div class="row">
-                                                    <div class="col-6 work-title mt-2">
-                                                         <i class="fas fa-chevron-down"></i>&ensp;&ensp;2008 – 2011:&ensp;&ensp;<span style="font-weight: 400;">ORIFLAME COSMETICS AB</span>
-                                                    </div>
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2008 – 2011:&ensp;&ensp;<span style="font-weight: 400;">ORIFLAME COSMETICS AB</span></div>
                                                     <div class="col-6 text-right">
                                                         <img src="assets/images/oriflame.png" alt="Michellin Logo" width="100" />
                                                     </div>
@@ -325,9 +318,7 @@
                                         <h2 class="mb-0">
                                             <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                                 <div class="row">
-                                                    <div class="col-6 work-title mt-2">
-                                                         <i class="fas fa-chevron-down"></i>&ensp;&ensp;2007 – 2008:&ensp;&ensp;<span style="font-weight: 400;">FOLKUNIVERSITETET</span>
-                                                    </div>
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2007 – 2008:&ensp;&ensp;<span style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
                                                     <div class="col-6 text-right">
                                                         <img src="assets/images/folkuniversitetet.png" alt="Michellin Logo" width="100" />
                                                     </div>
@@ -352,7 +343,220 @@
             </div>
         </div>
 
-        <!---Section-->
+        <!---Mobile-->
+        <div class="container-fluid d-xl-block">
+            <div class="row">
+                <!---Work Mobile-->
+                <div class="col-12 pt-3 pl-4 pr-4">
+                    <div class="row section-font">
+                        <div class="col-1">
+                            <i class="fas fa-briefcase fa-1x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 pl-4 section-title-padding">
+                            <p class="text-uppercase">Work Experience</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card mb-4">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="flase" aria-controls="collapseOne">
+                                                <div class="row">
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2013 – 2019:</div>
+                                                    <div><span style="font-weight: 400;">MICHELIN NORDIC AB</span></div>
+                                                 
+                                                </div>
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Management Accountant</p>
+                                            <ul>
+                                                <li>Reported sales and stock on a monthly/ yearly basis. Analysed and investigated anomalies in stock differentials</li>
+                                                <li>Management of Fixed Assets: Calculated depreciations. Maintained stock control in warehouse. Initiated scrapping and carried out impairment analysis</li>
+                                                <li>In charge of bank reconciliations and bookings for four Michelin entities. As well as approving bank payments</li>
+                                                <li>
+                                                    I was part of the team in transitioning from our local financial systems to our centralised financial systems. Also supported in making risk assessment analysis and planning a timetable of
+                                                    action plans
+                                                </li>
+                                            </ul>
+                                            <p>General Ledger & Intercompany Account</p>
+                                            <ul>
+                                                <li>Consolidated, prepared and reported financial results, for month and year end closing, to the main headquarters in France</li>
+                                                <li>Organized month end tasks and was responsible for on time reporting</li>
+                                                <li>Responsible for General Ledger and Inter-company transactions</li>
+                                                <li>Supported the Financial Controller and CFO in the preparation of the audit</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="row">
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2011 – 2013:</div>
+                                                    <div><span style="font-weight: 400;">ERICSSON AB</span></div>
+                                               
+                                                </div>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Cost Center Accountant</p>
+                                            <ul>
+                                                <li>Performed monthly and yearly technical analysis of accounts</li>
+                                                <li>Supported the organization in financial matters and systems</li>
+                                                <li>Provided and ensured quality in financial reporting for month/year end closing</li>
+                                                <li>Supported operations in preparing forecasts</li>
+                                                <li>Prepared standard reports for Cost Centers</li>
+                                                <li>Sent monthly ‘actual vs forecast’ reports, with comments, to the CFO</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="row">
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2008 – 2011:</div>
+                                                    <div><span style="font-weight: 400;">ORIFLAME COSMETICS AB</span></div>
+                                                
+                                                </div>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Financial Accountant</p>
+                                            <ul>
+                                                <li>Prepared timely and accurate financial reports on behalf of Oriflame entity for Group and Local statutory purposes in the month and year end closing</li>
+                                                <li>Responsible for authority reporting and tax declaration (corporate income tax, VAT, statistical reporting)</li>
+                                                <li>Reconciliation of bank accounts</li>
+                                                <li>Issued invoices to Oriflame entities worldwide, receiving and posting customer payments and applying withholding tax where appropriate</li>
+                                                <li>Prepared monthly Cash Flows</li>
+                                                <li>Validated, processed and booked supplier invoices</li>
+                                                <li>Managed the ‘Shared Services Finance’ content on the internal Oriflame intranet</li>
+                                                <li>Project managed the centralisation of financial services from offshore operations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <div class="row">
+                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2007 – 2008:</div>
+                                                    <div><span style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
+                                             
+                                                </div>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p>Business English Teacher</p>
+                                            <ul>
+                                                <li>Taught Business English; Working in English; and general English to adult learners at various companies around Stockholm & Madrid – ranging from beginners to advanced</li>
+                                                <li>With the variety of courses taught, It was essential to be organized, methodical, accurate</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---skills Mobile-->
+                <div class="col-12 section-border pt-3 pl-5">
+                    <div class="row section-font">
+                        <div class="col-2">
+                            <i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 pl-0 section-title-padding">
+                            <p class="text-uppercase">Code</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Coding</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">HTML</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">CSS</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Javascript</p>
+                            <p class="mb-1" style="font-weight: 300; font-size: 13px;">Python</p>
+                        </div>
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Hosting</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Bootstrap</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">GitHub</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Heroku</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Data</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">SQL</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Postgres</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">MongoDB</p>
+                        </div>
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Framworks</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Django</p>
+                            <ul>
+                                <li style="font-weight: 300; font-size: 13px;">GitHub</li>
+                                <li style="font-weight: 300; font-size: 13px;">Heroku</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row section-font mt-5">
+                        <div class="col-2">
+                            <i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 pl-0 section-title-padding">
+                            <p class="text-uppercase">Computer</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Office</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Excel</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Word</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">PowerPoint</p>
+                        </div>
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Adobe</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Indesign</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Illustrator</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Photoshop</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Finance</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">iScala</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">SAP</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">BIS Warehouse</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">IFS</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Cognos</p>
+                        </div>
+                        <div class="col-6 section-content">
+                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 16px;">Finance</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Travel Base</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Sabre</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Sage</p>
+                            <p class="mb-0" style="font-weight: 300; font-size: 13px;">Oracle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!---Block-->
 
