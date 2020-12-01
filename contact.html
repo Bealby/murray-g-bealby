@@ -12,9 +12,20 @@
     </head>
 
     <body>
+
+      <!---Header - Mobile -->
+        <div class="container-fluid d-xl-none">
+            <div class="row header">
+                <div class="col text-center">
+                    <p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p>
+                    <p class="header-role-mb">Full Stack Web Developer</p>
+                </div>
+            </div>
+        </div>
+
         <!---Mobile Toggle-->
 
-        <div class="container-fluid d-lg-none">
+        <div class="container-fluid d-xl-none">
             <div class="row menu-icon text-center">
                 <div class="col">
                     <span onclick="openMenu()">&#9776;</span>
@@ -35,7 +46,7 @@
 
         <!---Navbar-->
 
-        <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-lg-block sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
             <div class="row header">
                 <div class="col text-center">
                     <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
@@ -117,9 +128,9 @@
 
         <!---Section-->
         <!---Desktop-->
-        <div class="container-fluid d-none d-lg-block">
+        <div class="container-fluid d-none d-xl-block">
             <div class="row">
-                <div class="col-4 section-border pt-3 pl-5">
+                <div class="col-3 section-border pt-3 pl-5">
                     <div class="row section-font">
                         <div class="col-12 pl-0 section-title-padding">
                             <p class="text-uppercase">Contact</p>
@@ -181,7 +192,7 @@
                     </div>
                 </div>
                 <!---2nd Section-->
-                <div class="col-8 pt-3 pl-5">
+                <div class="col-9 pt-3 pl-5">
                     <div class="row section-font">
                         <div class="col-8">
                             <form onsubmit="return sendMail(this);" id="myForm">

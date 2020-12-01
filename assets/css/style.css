@@ -30,6 +30,22 @@ body{
     margin-bottom:2rem;
     }
 
+.header-name-mb{
+    font-weight:700;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    padding-top:2rem;
+    }
+
+.header-role-mb{
+    font-weight:700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(64, 64, 64);
+    margin-bottom:1rem;
+    }
+
 /*---Navbar---*/
 
 .navbar-font a{
