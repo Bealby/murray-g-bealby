@@ -16,20 +16,19 @@ body{
 
 .header-name{
     font-weight:700;
-    font-size: 35px;
+    font-size: 45px;
     letter-spacing: 3px;
     color: rgb(255, 255, 255);
     padding-top:1rem;
-    margin-bottom:0.7rem;
-}
+    }
 
 .header-role{
     font-weight:700;
     font-size: 20px;
     letter-spacing: 2px;
-    margin-bottom:0px;
     color: rgb(64, 64, 64);
-}
+    margin-bottom:1rem;
+    }
 
 /*---Navbar---*/
 
@@ -155,6 +154,18 @@ body{
     text-decoration:none !important;
 }
 
+/*---Bootstrap Collapse---*/
+
+.btn-link:hover, .btn-link, .btn-link:focus{
+   text-decoration:none;
+}
+
+.btn-block,
+.card-header {
+	background-color: rgb(211,235,230);
+	border: rgb(211,235,230);
+}
+
 /*---Navbar Boxes---*/
 
 .fa-home .fa-graduation-cap .fa-commenting-o .fa-users .fa-github{
@@ -194,21 +205,3 @@ footer{
 
 
 /*---Media Queries---*/
-
-@media(min-width: 991px) {
-    .header-name{
-        font-weight:700;
-        font-size: 45px;
-        letter-spacing: 3px;
-        color: rgb(255, 255, 255);
-        padding-top:3rem;
-        }
-
-    .header-role{
-        font-weight:700;
-        font-size: 20px;
-        letter-spacing: 2px;
-        color: rgb(64, 64, 64);
-        margin-bottom:1rem;
-        }
-}
