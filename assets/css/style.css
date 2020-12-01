@@ -99,7 +99,7 @@ body{
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: rgb(109, 189, 174, 0.9);
+  background: rgb(109, 189, 174, 1);
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
