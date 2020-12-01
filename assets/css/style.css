@@ -164,7 +164,7 @@ body{
 
 .section-content{
     letter-spacing: 1px;
-    text-align:justify;
+    text-align:left;
     color: rgb(64, 64, 64);
 }
 
