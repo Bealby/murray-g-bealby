@@ -146,6 +146,15 @@ body{
     color: rgb(64, 64, 64);
 }
 
+.work-title{
+    font-weight:700;
+    font-size: 20px;
+    margin-bottom:0px;
+    padding-left:0px;
+    color: rgb(64, 64, 64);
+    text-decoration:none !important;
+}
+
 /*---Navbar Boxes---*/
 
 .fa-home .fa-graduation-cap .fa-commenting-o .fa-users .fa-github{
