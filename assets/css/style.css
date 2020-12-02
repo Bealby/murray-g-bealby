@@ -185,6 +185,10 @@ body{
     padding-left:2rem;
 }
 
+.mb-padding{
+    padding-left:4rem;
+}
+
 /*---Collapse Bootstrap---*/
 
 .btn-link:hover, .btn-link, .btn-link:focus{
@@ -225,6 +229,11 @@ body{
 .contact-form-tablet{
     padding-right:8rem;
     padding-left:8rem;
+}
+
+.contact-form-mb{
+    padding-right:2rem;
+    padding-left:2rem;
 }
 
 .contact-border{
