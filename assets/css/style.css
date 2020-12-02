@@ -247,6 +247,10 @@ footer{
         color:rgb(109, 189, 174, 0.6);
 }
 
+.icon-color{
+        color:rgb(109, 189, 174);
+}
+
 /*---Media Queries---*/
 
 /*---Larger font for card content for mb. Better/ clearer read---*/
