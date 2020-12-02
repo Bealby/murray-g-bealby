@@ -208,6 +208,7 @@ body{
 }
 
 /*---Download CV Remove underline---*/
+
 .decoration a{
     text-decoration:none !important;
 }
