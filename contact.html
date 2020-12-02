@@ -126,9 +126,9 @@
 
         <!---Section-->
         <!---Desktop-->
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-xl-block">
             <div class="row">
-                <!---Desktop - Contact-->
+                <!---Contact Info-->
                 <div class="col-xl-3 section-border pt-3 pl-4">
                     <div class="row section-font">
                         <div class="col-12">
@@ -201,33 +201,133 @@
                 <div class="col-xl-9 pt-3">
                     <div class="row section-font">
                         <div class="col-12 contact-form">
-                            <p class="text-uppercase text-center">Let's Connect</p>
-                                <div class="contact-border pl-5 pr-5 pt-4 pb-4">
-                                    <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
+                            <p class="text-uppercase text-center pb-3">Let's Connect</p>
+                            <div class="contact-border pl-5 pr-5 pt-4 pb-4">
+                                <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-3">
                                         <div class="row">
-                                            <div class="col-12">
-                                                <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                            <div class="col-10 offset-1 text-center">
+                                                <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
                                             </div>
                                         </div>
-                                         <div class="row">
-                                            <div class="col-12">
-                                                <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-12">
-                                                <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="container pt-3">
-                                            <div class="row">
-                                                <div class="col-10 offset-1 text-center">
-                                                    <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Mobile-->
+        <div class="container-fluid d-xl-none">
+            <div class="row">
+                <!---Contact Info mb-->
+                <div class="col-xl-3 pt-3 text-center">
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Contact</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-4 mx-auto">
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-phone-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;+46 764 220 155</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-envelope fa-1x" aria-hidden="true"></i>&ensp;&ensp;murray@bealby.org</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-map-marker-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;Stockholm, Johanneshov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Personal</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3 section-content-mb mx-auto">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-male fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;Born: UK, 1978</p>
+                                    <p style="font-weight: 300; font-size: 20px;">&ensp;Swedish Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-comments fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;English – Mother Tongue</p>
+                                    <p style="font-weight: 300; font-size: 20px;">&ensp;Swedish – Level 2 (Berlitz)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Contact Form mb-->
+                <div class="col-xl-9 pt-3">
+                    <div class="row section-font">
+                        <div class="col-12 contact-form">
+                            <p class="text-uppercase text-center pb-3">Let's Connect</p>
+                            <div class="contact-border pl-5 pr-5 pt-4 pb-4">
+                                <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-3">
+                                        <div class="row">
+                                            <div class="col-10 offset-1 text-center">
+                                                <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
