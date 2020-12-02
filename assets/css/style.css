@@ -207,6 +207,20 @@ body{
     height:40px;
 }
 
+/*---Contact Form---*/
+
+.contact-form{
+    padding-right:15rem;
+    padding-left:15rem;
+}
+
+.contact-border{
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgb(0, 0, 0, 1);
+    background-color: rgb(211,235,230);
+	border: rgb(211,235,230);
+}
+
 /*---Download CV Remove underline---*/
 
 .decoration a{
