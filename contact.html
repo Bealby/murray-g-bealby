@@ -201,12 +201,33 @@
                 <div class="col-xl-9 pt-3">
                     <div class="row section-font">
                         <div class="col-12 contact-form">
-                            <p class="text-uppercase text-center">Let's Connect&ensp;&ensp;<i class="fa fa-paper-plane fa-1x" aria-hidden="true"></i></p>
+                            <p class="text-uppercase text-center">Let's Connect</p>
                                 <div class="contact-border pl-5 pr-5 pt-4 pb-4">
                                     <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
-                                        <i class="fas fa-user-alt"></i><input type="text" name="name" class="form-control mt-3 form-fields" id="fullname" placeholder="Name" required />
-                                        <i class="fas fa-envelope"></i><input type="email" name="emailaddress" class="form-control mt-3 form-fields" id="emailaddress" placeholder="Email" required />
-                                        <i class="fas fa-pencil-alt"></i><textarea rows="5" name="comment" class="form-control mt-3 form-fields" id="comment" placeholder="Comment" required></textarea>
+                                        <div class="row">
+                                            <div class="col-1 pt-3">
+                                                <i class="fas fa-user-alt"></i>
+                                            </div>
+                                            <div class="col-11">
+                                                <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                            </div>
+                                        </div>
+                                         <div class="row">
+                                            <div class="col-1 pt-3">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="col-11">
+                                                <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-1 pt-3">
+                                                <i class="fas fa-pencil-alt"></i>
+                                             </div>
+                                            <div class="col-11 placeholder">
+                                                <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
+                                            </div>
+                                        </div>
                                         <div class="container pt-3">
                                             <div class="row">
                                                 <div class="col-10 offset-1 text-center">
