@@ -336,6 +336,23 @@ color:rgb(187, 187, 187) !important;
    box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
 }
 
+.btn-font-project{
+      background-color: rgb(109, 189, 174);
+      font-weight: 600;
+      letter-spacing: 2px;
+      border-radius: .8rem;
+      -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+      -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+      box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+
+.btn-font-project:hover,
+.btn-font-project:active,
+.btn-font-project:focus {
+    background-color: rgb(109, 189, 174, 0.6);
+    transform: scale(1.05) !important;
+}
+
 
 /*---Footer---*/
 
