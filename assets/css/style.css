@@ -317,6 +317,24 @@ color:rgb(187, 187, 187) !important;
     font-size: 20px;
 }
 
+/*---Image Projects---*/
+
+.project-border{
+    border:3px solid rgb(109, 189, 174);;
+}
+
+/*---Image Projects hover-Overlay---*/
+
+.hover-overlay-image:hover{
+    transform: scale(1.1) !important;
+}
+
+.hover-overlay-image {
+   -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+
 
 /*---Footer---*/
 
