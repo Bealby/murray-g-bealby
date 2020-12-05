@@ -344,6 +344,7 @@ color:rgb(187, 187, 187) !important;
       -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
       -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
       box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+      color:white;
 }
 
 .btn-font-project:hover,
