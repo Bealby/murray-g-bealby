@@ -1,4 +1,8 @@
-# Code
+# Murray Bealby
+         
+## Full Stack Web Developer
 
-## Full Screen Overlay Responsive Nav Bar
+### Credit
+
+#### Full Screen Overlay Responsive Nav Bar
 https://github.com/Rustcodeweb/Full-Screen-Overlay-Responsive-Navigation-Bar
