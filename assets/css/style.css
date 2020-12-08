@@ -404,11 +404,13 @@ footer{
     position: fixed;
     bottom: 0.625rem;
     right: 0.625rem;
+    z-index:1
 }
 
 .page-top-link{
     cursor: pointer;
     text-decoration:none !important;
+    z-index:1
 }
 
 /*-----Blinking Arrow feature-----*/
