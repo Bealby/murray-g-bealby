@@ -396,6 +396,10 @@ footer{
     transform: scale(1.3) !important;
 }
 
+.fa-chevron-down{
+    color:rgb(109, 189, 174);
+}
+
 /*-----Page-Top-Scroll-Feature-----*/
 
 .page-top-button {
@@ -411,19 +415,6 @@ footer{
     cursor: pointer;
     text-decoration:none !important;
     z-index:1
-}
-
-/*-----Blinking Arrow feature-----*/
-
-.blinking{
-    animation:blinkingText 1.2s infinite;
-}
-@keyframes blinkingText{
-    0%{     color: rgb(109, 189, 174, 1); }
-    49%{    color: rgb(109, 189, 174, 1); }
-    60%{    color: transparent; }
-    99%{    color: transparent; }
-    100%{   color: rgb(109, 189, 174, 1); }
 }
 
 /*---Media Queries---*/
