@@ -377,16 +377,23 @@ footer{
         color:rgb(109, 189, 174);
 }
 
-.footer{
-        color:rgb(255,255,255) !important;
-}
 
 .fa-download:hover{
-        color:rgb(109, 189, 174, 0.6);
+        color:rgb(109, 189, 174);
+        transform: scale(1.5) !important;
 }
 
 .icon-color{
         color:rgb(109, 189, 174);
+}
+
+.footer{
+        color:rgb(255,255,255) !important;
+}
+
+.footer:hover{
+        color:rgb(255,255,255) !important;
+        transform: scale(1.3) !important;
 }
 
 /*-----Page-Top-Scroll-Feature-----*/
