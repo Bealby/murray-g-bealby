@@ -12,14 +12,16 @@ body{
 
 .header{
     background-color:rgb(109, 189, 174);
+    margin-bottom:2rem;
+    padding-top:0rem;
 }
 
 .header-name{
     font-weight:700;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: 3px;
     color: rgb(255, 255, 255);
-    padding-top:1rem;
+    padding-top:0rem;
     }
 
 .header-role{
@@ -27,7 +29,7 @@ body{
     font-size: 20px;
     letter-spacing: 2px;
     color: rgb(64, 64, 64);
-    margin-bottom:2rem;
+    margin-bottom:0rem;
     }
 
 .header-name-mb{
