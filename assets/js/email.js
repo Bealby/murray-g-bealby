@@ -8,11 +8,11 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
+            // Message Alert for 'Message Sent'
+            swal("Message Sent");
+            console.log("SUCCESS", response);
             // Clears contact form after message sent
             document.getElementById("myForm").reset();
-             // Message Alert for 'Message Sent'
-            swal("Message Sent", "success");
-            console.log("SUCCESS", response);
         },
         function(error) {
             // Message Alert for 'Message Fail'
