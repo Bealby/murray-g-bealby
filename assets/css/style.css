@@ -367,10 +367,18 @@ footer{
     margin: 0;
 }
 
+#footer-padding{
+    margin-bottom:2rem !important;
+}
+
 /*---Font Awesome Icons---*/
 
 .fa-download{
         color:rgb(109, 189, 174);
+}
+
+.footer{
+        color:rgb(255,255,255) !important;
 }
 
 .fa-download:hover{
@@ -381,7 +389,7 @@ footer{
         color:rgb(109, 189, 174);
 }
 
-/*-----PRODUCTS.html - Page-Top-Scroll-Feature-----*/
+/*-----Page-Top-Scroll-Feature-----*/
 
 .page-top-button {
     height: 2.625rem;
