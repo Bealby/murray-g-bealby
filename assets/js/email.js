@@ -1,5 +1,5 @@
 // Script for EmailJS API as well as alerts
-// Environ variable set up for EMAILJS_KEY
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "murray_bealby", {
         "from_name": contactForm.name.value,
@@ -8,11 +8,14 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-            // Message Alert for 'Message Sent'
-            swal("Message Sent");
-            console.log("SUCCESS", response);
             // Clears contact form after message sent
             document.getElementById("myForm").reset();
+             // Message Alert for 'Message Sent'
+            swal("Message Sent");
+            console.log("SUCCESS", response);
+            setTimeout(function(){
+            window.location.reload(1);
+            }, 5000);
         },
         function(error) {
             // Message Alert for 'Message Fail'
