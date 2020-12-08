@@ -381,6 +381,29 @@ footer{
         color:rgb(109, 189, 174);
 }
 
+/*-----PRODUCTS.html - Page-Top-Scroll-Feature-----*/
+
+.page-top-button {
+    height: 2.625rem;
+    width: 2.625rem;
+    position: fixed;
+    bottom: 0.625rem;
+    right: 0.625rem;
+}
+
+.page-top-button-interests {
+    height: 2.625rem;
+    width: 2.625rem;
+    position: fixed;
+    bottom: 0.625rem;
+    right: 3rem;
+}
+
+.page-top-link{
+    cursor: pointer;
+    text-decoration:none !important;
+}
+
 /*---Media Queries---*/
 
 /*---Larger font for card content for mb. Better/ clearer read---*/
