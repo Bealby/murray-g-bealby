@@ -391,14 +391,6 @@ footer{
     right: 0.625rem;
 }
 
-.page-top-button-interests {
-    height: 2.625rem;
-    width: 2.625rem;
-    position: fixed;
-    bottom: 0.625rem;
-    right: 3rem;
-}
-
 .page-top-link{
     cursor: pointer;
     text-decoration:none !important;
