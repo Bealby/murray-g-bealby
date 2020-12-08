@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
         <script type="text/javascript">
-            (function(){
-            emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
-            })();
+        (function() {
+        emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
+        })();
         </script>
     </head>
 
@@ -412,10 +412,10 @@
                         <p class="text-uppercase mb-padding pb-3">Let's Connect</p>
                         <div class="col-12 contact-form-mb">
                             <div class="contact-border pl-4 pr-4 pt-4 pb-4">
-                                <form onsubmit="return sendMail(this);" method="POST">
+                                <form onsubmit="return sendMail(this);" id="myForm">
                                     <div class="row">
                                         <div class="col-12">
-                                            <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                            <input type="text" name="name" class="form-control section-content mt-3" id="name" placeholder="Name" required />
                                         </div>
                                     </div>
                                     <div class="row">
@@ -487,5 +487,6 @@
         <script type="text/javascript" src="assets/js/navbar.js"></script>
         <script type="text/javascript" src="assets/js/scroll.js"></script>
         <script src="assets/js/email.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
