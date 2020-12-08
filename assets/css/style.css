@@ -404,7 +404,7 @@ footer{
     position: fixed;
     bottom: 0.625rem;
     right: 0.625rem;
-    z-index:1
+    z-index:-1
 }
 
 .page-top-link{
