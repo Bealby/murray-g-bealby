@@ -15,7 +15,7 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
             setTimeout(function(){
             window.location.reload(1);
-            }, 3000);
+            }, 2000);
         },
         function(error) {
             // Message Alert for 'Message Fail'
