@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,900|Exo:100,200,300,400,500,600,700');
 
-/*---Navbar Overlay---*/
+/*---Body---*/
 
 body{
   font-family: Roboto, sans-serif;
   margin: 0px;
   padding: 0px;
+}
+
+/*---Into.html---*/
+
+.intro-background{
+    background-color: rgb(109, 189, 174);
 }
 
 /*---Header---*/
@@ -117,21 +123,22 @@ body{
   font-size: 30px;
   color: white;
   display: block;
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   transition: .3s ease-in-out;
   font-weight:700;
+  letter-spacing: 2px;
 }
 
 .menu-content-intro{
   padding: 16px;
   text-decoration: none;
   font-size: 30px;
-  color: red;
   display: block;
-  font-family: sans-serif;
+  font-family: roboto, sans-serif;
   transition: .3s ease-in-out;
   font-weight:700;
   margin-top:10rem;
+  letter-spacing: 2px;
 }
 
 .menu-content a:hover{
@@ -439,7 +446,6 @@ footer{
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -459,7 +465,6 @@ footer{
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
