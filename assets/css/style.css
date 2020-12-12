@@ -486,17 +486,27 @@ footer{
 
 /* Links */
 
-#about {animation-timing-function: ease-out;}
 
+@-moz-keyframes mymove {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes mymove {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
 @keyframes mymove {
-  from {left: 0px;}
-  to {left: 100px;}
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 
-.links{
-  animation: mymove 5s;
+.about{
+  animation: mymove 2s 5s;
 }
 
+.resume{
+  animation: mymove 2s 7s;
+}
 
 /*---Media Queries---*/
 
