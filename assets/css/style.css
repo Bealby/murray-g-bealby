@@ -484,6 +484,19 @@ footer{
   to{border-right-color: transparent;}
 }
 
+/* Links */
+
+#about {animation-timing-function: ease-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+.links{
+  animation: mymove 5s;
+}
+
 
 /*---Media Queries---*/
 
