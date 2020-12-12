@@ -122,6 +122,18 @@ body{
   font-weight:700;
 }
 
+.menu-content-intro{
+  padding: 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: red;
+  display: block;
+  font-family: sans-serif;
+  transition: .3s ease-in-out;
+  font-weight:700;
+  margin-top:10rem;
+}
+
 .menu-content a:hover{
   background-color: #1b998b;
 }
