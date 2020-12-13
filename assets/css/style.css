@@ -461,7 +461,7 @@ footer{
 
 .line-2{
     position: relative;
-    top: 10rem;  
+    top: 3rem;  
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -481,7 +481,7 @@ footer{
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 12em;}
+  to{width: 80%;}
 }
 
 @keyframes blinkTextCursor{
