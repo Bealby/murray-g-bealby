@@ -445,7 +445,6 @@ footer{
     top: 5rem;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -453,18 +452,16 @@ footer{
 }
 
 .anim-typewriter{
-  animation: typewriter 3s steps(30) 0.5s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: animated-text 2.5s steps(30) 0.5s 1 normal both;
 }
 
 /* Role */
 
 .line-2{
     position: relative;
-    top: 3rem;  
+    top: 3.5rem;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -472,21 +469,15 @@ footer{
 }
 
 .anim-typewriter2{
-  animation: typewriter 3s steps(40) 2.5s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: animated-text 2.5s steps(40) 3s 1 normal both;
 }
 
 
 /* Typewriter */
 
-@keyframes typewriter{
+@keyframes animated-text{
   from{width: 0;}
   to{width: 80%;}
-}
-
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
 }
 
 /* Links */
