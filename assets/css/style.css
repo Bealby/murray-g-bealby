@@ -137,11 +137,22 @@ body{
   font-family: roboto, sans-serif;
   transition: .3s ease-in-out;
   font-weight:700;
-  margin-top:7rem;
+  margin-top:5rem;
   letter-spacing: 2px;
 }
 
+.menu-content-intro-links a{
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+
 .menu-content a:hover{
+  background-color: #1b998b;
+}
+
+.menu-content-intro-links a:hover{
   background-color: #1b998b;
 }
 
