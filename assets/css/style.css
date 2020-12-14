@@ -564,23 +564,23 @@ footer {
 }
 
 .about {
-	animation: mymove 2.5s 7s;
+	animation: mymove 2s 6s;
 }
 
 .resume {
-	animation: mymove 2.5s 8s;
+	animation: mymove 2s 7s;
 }
 
 .interests {
-	animation: mymove 2.5s 9s;
+	animation: mymove 2s 8s;
 }
 
 .contact {
-	animation: mymove 2.5s 10s;
+	animation: mymove 2s 9s;
 }
 
 .projects {
-	animation: mymove 2.5s 11s;
+	animation: mymove 2s 10s;
 }
 
 
