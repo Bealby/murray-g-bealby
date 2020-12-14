@@ -496,7 +496,7 @@ footer {
 }
 
 .anim-typewriter-dt {
-	animation: animated-text 4.5s steps(30) 0.5s 1 normal both;
+	animation: animated-text 8s steps(60) 0.5s 1 normal both;
 }
 
 
@@ -518,7 +518,7 @@ footer {
 }
 
 .anim-typewriter2-dt {
-	animation: animated-text 5.5s steps(40) 3.1s 1 normal both;
+	animation: animated-text 8s steps(70) 3s 1 normal both;
 }
 
 
