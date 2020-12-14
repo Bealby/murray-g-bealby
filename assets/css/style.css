@@ -455,6 +455,10 @@ footer{
   animation: animated-text 2.5s steps(30) 0.5s 1 normal both;
 }
 
+.anim-typewriter-dt{
+  animation: animated-text 4.5s steps(30) 0.5s 1 normal both;
+}
+
 /* Role */
 
 .line-2{
@@ -470,6 +474,10 @@ footer{
 
 .anim-typewriter2{
   animation: animated-text 2.5s steps(40) 3s 1 normal both;
+}
+
+.anim-typewriter2-dt{
+  animation: animated-text 5.5s steps(40) 3.1s 1 normal both;
 }
 
 
