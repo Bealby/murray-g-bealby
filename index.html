@@ -3,334 +3,71 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript">
+        <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
         <title>Murray Bealby</title>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
+            })();
+        </script>
     </head>
 
-    <body>
-        <!---Header - Mobile -->
-        <div class="container-fluid d-xl-none">
-            <div class="row header">
-                <div class="col text-center decoration">
-                    <a href="index.html"><p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p></a>
-                    <a href="index.html"><p class="header-role-mb">Full Stack Web Developer</p></a>
-                </div>
-            </div>
-        </div>
-
-        <!---Mobile Toggle-->
-
-        <div class="container-fluid d-xl-none">
-            <div class="row menu-icon text-center">
-                <div class="col">
-                    <span onclick="openMenu()">&#9776;</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-container" id="navbar">
-            <span class="closebtn" onclick="closeMenu()">&times;</span>
-            <div class="menu-content">
-                <a href="index.html" class="text-uppercase">About</a>
-                <a href="resume.html" class="text-uppercase">Résumé</a>
-                <a href="interests.html" class="text-uppercase">Interests</a>
-                <a href="contact.html" class="text-uppercase">Contact</a>
-                <a href="github.html" class="text-uppercase">Projects</a>
-            </div>
-        </div>
-
-        <!---Navbar-->
-
-        <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
-            <div class="row header">
-                <div class="col text-center decoration">
-                    <a href="index.html"><p class="mb-0 text-uppercase header-name">Murray Bealby</p></a>
-                    <a href="index.html"><p class="header-role">Full Stack Web Developer</p></a>
-                </div>
-            </div>
-            <div class="navbar-collapse navbar-main" id="navbarNav">
-                <ul class="navbar-nav mx-auto my-auto navbar-font">
-                    <li class="nav-item active">
-                        <a class="nav-link text-uppercase home-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="index.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Home
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase resume-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="resume.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Résumé
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase interests-box hvr-sweep-to-bottom pt-3 pl-1 pr-1 pb-3" href="interests.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Interests
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase contact-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="contact.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Contact
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase github-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="github.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    GitHub
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!---Block-->
-
-        <div class="container-fluid">
-            <div class="row block"></div>
-        </div>
-
-        <!---Section-->
-        <!---Desktop-->
-        <div class="container-fluid d-none d-xl-block">
-            <div class="row">
-                <!---Desktop - Achievements-->
-                <div class="col-xl-3 section-border pt-3 pl-4">
-                    <div class="row section-font">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fa fa-trophy fa-1x" aria-hidden="true"></i>&ensp;Achievements</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 pr-5">
-                        <div class="col-12 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Code Institute - 2020</p>
-                            <p style="font-weight: 300; font-size: 15px;">Full Stack Web Developer</p>
-                        </div>
-                        <div class="col-12 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Berlitz - 2018</p>
-                            <p style="font-weight: 300; font-size: 15px;">Swedish - Level 2</p>
-                        </div>
-                        <div class="col-12 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Umeå University - 2011</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Web Design Basics</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">Usability and Accessibility</p>
-                            <p style="font-weight: 300; font-size: 15px;">(HTML, CSS)</p>
-                        </div>
-                        <div class="col-12 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Cambridge School - 2005</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">CELTA</p>
-                            <p style="font-weight: 300; font-size: 15px;">(Certificate in English Language Teaching to Adults)</p>
-                        </div>
-                        <div class="col-12 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Coventry University - 2001</p>
-                            <p style="font-weight: 300; font-size: 15px;">BA (Honours) Financial Economics, 2:1</p>
-                        </div>
-                        <div class="col-12 section-content mb-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Steyning Grammar School - 1997</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 15px;">A-Levels:</p>
-                            <p style="font-weight: 300; font-size: 15px;">Mathematics, Business Studies, Physics</p>
-                        </div>
+    <body class="intro-background">
+        <section>
+            <!---Section-->
+            <div class="container-fluid intro-background">
+                <!---Desktop-->
+                <div class="row d-none d-xl-block">
+                    <div class="col-12">
+                        <p class="line-1 anim-typewriter-dt header-name">Murray Bealby</p>
+                        <p class="line-2 anim-typewriter2-dt header-role">Full Stack Web Developer</p>
                     </div>
                 </div>
-                <!---Desktop - Profile-->
-                <div class="col-xl-9 pt-3 pl-5">
-                    <div class="row section-font">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fa fa-user-alt fa-1x" aria-hidden="true">&ensp;</i>About</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">What do I do?</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
-                               I am a qualified Full Stack Web Developer experienced in HTML, CSS,
-                                Javascript and Python, who seeking to develop my new skill set and add value. 
-                            </p>
-                        </div>
-                        <div class="col-6 section-content pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">What is my background</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
-                                With 15 years' experience working for international companies in the Business Financial sector,
-                                I have regularly been involved in analysing large amounts of data in a concise and presentable manner.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 section-content pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Why hire me?</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 15px;">
-                               Highly driven and motivated, I readily adapt to different situations and thrive on
-                               delivery, success and attention to detail. An excellent team player, who is also self-motivated 
-                               and self-reliant, that strives to improve and develop designs and systems.
-
-
-                            </p>
-                        </div>
-                        <div class="col-6 section-content pr-5 decoration">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Download CV</p>
-                            <p class="pt-2 pb-2" style="font-weight: 300; font-size: 15px;">
-                                A printable version of my CV can be found here.<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;&ensp;<i class="fa fa-download fa-1x" aria-hidden="true"></i></a>
-                            </p>
-                        </div>
+                <!---Mobile-->
+                <div class="row d-xl-none">
+                    <div class="col-12">
+                        <p class="line-1 anim-typewriter header-name-mb">Murray Bealby</p>
+                        <p class="line-2 anim-typewriter2 header-role-mb">Full Stack Web Developer</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!---Mobile-->
-        <div class="container-fluid d-xl-none">
-            <div class="row">
-                <!---Mobile - Profile-->
-                <div class="col-12 pt-3 pl-4">
-                    <div class="row section-font-mb">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fa fa-user-alt fa-1x" aria-hidden="true"></i>&ensp;About</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 section-content-mb pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">What do I do?</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 20px;">
-                                I am a qualified Full Stack Web Developer experienced in HTML, CSS,
-                                Javascript and Python, who seeking to develop my new skill set and add value. 
-                            </p>
-                        </div>
-                        <div class="col-12 section-content-mb pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">What is my background</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 20px;">
-                                With 15 years' experience working for international companies in the Business Financial sector,
-                                I have regularly been involved in analysing large amounts of data in a concise and presentable manner.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 section-content-mb pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Why hire me?</p>
-                            <p class="pt-2" style="font-weight: 300; font-size: 20px;">
-                               Highly driven and motivated, I readily adapt to different situations and thrive on
-                               delivery, success and attention to detail. An excellent team player, who is also self-motivated 
-                               and self-reliant, that strives to improve and develop designs and systems.
-                            </p>
-                        </div>
-                        <div class="col-12 section-content-mb decoration pr-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Download CV</p>
-                            <p class="pt-2 pb-2" style="font-weight: 300; font-size: 20px;">
-                                A printable CV version can be found here<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;&ensp;<i class="fa fa-download fa-1x" aria-hidden="true"></i></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!---Mobile - Achievements-->
-                <div class="col-12 pt-3 pl-4 mt-4">
-                    <div class="row section-font-mb">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fa fa-trophy fa-1x" aria-hidden="true"></i>&ensp;Achievements</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 pr-5">
-                        <div class="col-12 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Code Institute - 2020</p>
-                            <p style="font-weight: 300; font-size: 20px;">Full Stack Web Developer</p>
-                        </div>
-                        <div class="col-12 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Berlitz - 2018</p>
-                            <p style="font-weight: 300; font-size: 20px;">Swedish - Level 2</p>
-                        </div>
-                        <div class="col-12 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Umeå University - 2011</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Web Design Basics</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 20px;">Usability and Accessibility</p>
-                            <p style="font-weight: 300; font-size: 20px;">(HTML, CSS)</p>
-                        </div>
-                        <div class="col-12 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Cambridge School - 2005</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 20px;">CELTA</p>
-                            <p style="font-weight: 300; font-size: 20px;">(Certificate in English Language Teaching to Adults)</p>
-                        </div>
-                        <div class="col-12 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Coventry University - 2001</p>
-                            <p style="font-weight: 300; font-size: 20px;">BA (Honours) Financial Economics, 2:1</p>
-                        </div>
-                        <div class="col-12 section-content-mb mb-5">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Steyning Grammar - 1997</p>
-                            <p class="mb-0 pb-1" style="font-weight: 300; font-size: 20px;">A-Levels:</p>
-                            <p style="font-weight: 300; font-size: 20px;">Mathematics, Business Studies, Physics</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll to top of page arrow -->
-            <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
-                <a class="page-top-link d-flex h-100">
-                    <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
-                </a>
-            </div>
-        </div>
-
-        <!---Block-->
-
-        <div class="container-fluid">
-            <div class="row block"></div>
-        </div>
-
-        <!---Footer-->
-
-        <footer>
-            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 pt-3 d-none d-lg-block">
-                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">About</p>
-                        <p class="footer-padding" style="font-weight: 300; font-size: 15px;">
-                            I am a qualified Full Stack Web Developer experienced in HTML, CSS, Javascript and Python,
-                            who is looking for a role in financial technology. 
-                        </p>
-                    </div>
-                    <div class="col-md-6 pt-3">
-                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">Download My CV</p>
-                        <p class="" style="font-weight: 300; font-size: 15px;">
-                            A printable CV can be found here&ensp;
-                            <a href="assets/cv/murray-bealby.pdf" target="_blank" class="cv-pdf"><i class="fa fa-download footer" aria-hidden="true"></i></a>
-                        </p>
+                    <div class="col-12 menu-content-intro">
+                        <div class="row text-center">
+                            <div class="col-12 about menu-content-intro-links pl-0 pr-0" id="about-reveal" style="visibility: hidden;">
+                                <a href="about.html" style="color: rgb(255, 255, 255);" class="text-uppercase">About</a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 resume menu-content-intro-links pl-0 pr-0" id="resume-reveal" style="visibility: hidden;">
+                                <a href="resume.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Résumé</a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 interests menu-content-intro-links pl-0 pr-0" id="interests-reveal" style="visibility: hidden;">
+                                <a href="interests.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Interests</a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 contact menu-content-intro-links pl-0 pr-0" id="contact-reveal" style="visibility: hidden;">
+                                <a href="contact.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Contact</a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 projects menu-content-intro-links pl-0 pr-0" id="projects-reveal" style="visibility: hidden;">
+                                <a href="github.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Projects</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -340,5 +77,7 @@
         <script type="text/javascript" src="assets/js/navbar.js"></script>
         <script type="text/javascript" src="assets/js/scroll.js"></script>
         <script type="text/javascript" src="assets/js/email.js"></script>
+        <script type="text/javascript" src="assets/js/reveal.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
