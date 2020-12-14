@@ -485,23 +485,35 @@ footer{
 
 @-moz-keyframes mymove {
     from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(720deg); }
+    to { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes mymove {
     from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(72de0g); }
+    to { -webkit-transform: rotate(360deg); }
 }
 @keyframes mymove {
     from {transform:rotate(0deg);}
-    to {transform:rotate(720deg);}
+    to {transform:rotate(360deg);}
 }
 
 .about{
-  animation: mymove 4s;
+  animation: mymove 1.5s 6s;
 }
 
 .resume{
-  animation: mymove 2s 7s;
+  animation: mymove 1.5s 7s;
+}
+
+.interests{
+  animation: mymove 1.5s 8s;
+}
+
+.contact{
+  animation: mymove 1.5s 9s;
+}
+
+.projects{
+  animation: mymove 1.5s 10s;
 }
 
 /*---Media Queries---*/
