@@ -1,505 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
+        <title>Murray Bealby</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title>Murray Bealby</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-        type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
+            })();
+        </script>
+    </head>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
-        })();
-    </script>
-</head>
-
-<body>
-    <!---Header - Mobile -->
-    <div class="container-fluid d-xl-none">
-        <div class="row header">
-            <div class="col text-center decoration">
-                <a href="about.html">
-                    <p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p>
-                </a>
-                <a href="about.html">
-                    <p class="header-role-mb">Full Stack Web Developer</p>
-                </a>
+    <body>
+        <!---Header - Mobile -->
+        <div class="container-fluid d-xl-none">
+            <div class="row header">
+                <div class="col text-center decoration">
+                    <a href="about.html"><p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p></a>
+                    <a href="about.html"><p class="header-role-mb">Full Stack Web Developer</p></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!---Mobile Toggle-->
+        <!---Mobile Toggle-->
 
-    <div class="container-fluid d-xl-none">
-        <div class="row menu-icon text-center">
-            <div class="col">
-                <span onclick="openMenu()">&#9776;</span>
+        <div class="container-fluid d-xl-none">
+            <div class="row menu-icon text-center">
+                <div class="col">
+                    <span onclick="openMenu()">&#9776;</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="menu-container" id="navbar">
-        <span class="closebtn" onclick="closeMenu()">&times;</span>
-        <div class="menu-content">
-            <a href="about.html" class="text-uppercase">About</a>
-            <a href="resume.html" class="text-uppercase">Résumé</a>
-            <a href="interests.html" class="text-uppercase">Interests</a>
-            <a href="contact.html" class="text-uppercase">Contact</a>
-            <a href="github.html" class="text-uppercase">Projects</a>
-        </div>
-    </div>
-
-    <!---Navbar-->
-
-    <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
-        <div class="row header">
-            <div class="col text-center decoration">
-                <a href="about.html">
-                    <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
-                </a>
-                <a href="about.html">
-                    <p class="header-role">Full Stack Web Developer</p>
-                </a>
+        <div class="menu-container" id="navbar">
+            <span class="closebtn" onclick="closeMenu()">&times;</span>
+            <div class="menu-content">
+                <a href="about.html" class="text-uppercase">About</a>
+                <a href="resume.html" class="text-uppercase">Résumé</a>
+                <a href="interests.html" class="text-uppercase">Interests</a>
+                <a href="contact.html" class="text-uppercase">Contact</a>
+                <a href="github.html" class="text-uppercase">Projects</a>
             </div>
         </div>
-        <div class="navbar-collapse navbar-main" id="navbarNav">
-            <ul class="navbar-nav mx-auto my-auto navbar-font">
-                <li class="nav-item active">
-                    <a class="nav-link text-uppercase home-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3"
-                        href="about.html">
-                        <div class="row">
-                            <div class="col-12 text-center pb-1">
-                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+
+        <!---Navbar-->
+
+        <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
+            <div class="row header">
+                <div class="col text-center decoration">
+                    <a href="about.html"><p class="mb-0 text-uppercase header-name">Murray Bealby</p></a>
+                    <a href="about.html"><p class="header-role">Full Stack Web Developer</p></a>
+                </div>
+            </div>
+            <div class="navbar-collapse navbar-main" id="navbarNav">
+                <ul class="navbar-nav mx-auto my-auto navbar-font">
+                    <li class="nav-item active">
+                        <a class="nav-link text-uppercase home-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="about.html">
+                            <div class="row">
+                                <div class="col-12 text-center pb-1">
+                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    Home
+                                </div>
                             </div>
-                            <div class="col-12 text-center">
-                                Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase resume-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="resume.html">
+                            <div class="row">
+                                <div class="col-12 text-center pb-1">
+                                    <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    Résumé
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase resume-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3"
-                        href="resume.html">
-                        <div class="row">
-                            <div class="col-12 text-center pb-1">
-                                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase interests-box hvr-sweep-to-bottom pt-3 pl-1 pr-1 pb-3" href="interests.html">
+                            <div class="row">
+                                <div class="col-12 text-center pb-1">
+                                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    Interests
+                                </div>
                             </div>
-                            <div class="col-12 text-center">
-                                Résumé
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase contact-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="contact.html">
+                            <div class="row">
+                                <div class="col-12 text-center pb-1">
+                                    <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    Contact
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase interests-box hvr-sweep-to-bottom pt-3 pl-1 pr-1 pb-3"
-                        href="interests.html">
-                        <div class="row">
-                            <div class="col-12 text-center pb-1">
-                                <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase github-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="github.html">
+                            <div class="row">
+                                <div class="col-12 text-center pb-1">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-12 text-center">
+                                    GitHub
+                                </div>
                             </div>
-                            <div class="col-12 text-center">
-                                Interests
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase contact-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3"
-                        href="contact.html">
-                        <div class="row">
-                            <div class="col-12 text-center pb-1">
-                                <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-12 text-center">
-                                Contact
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase github-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3"
-                        href="github.html">
-                        <div class="row">
-                            <div class="col-12 text-center pb-1">
-                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-12 text-center">
-                                GitHub
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!---Block-->
+
+        <div class="container-fluid">
+            <div class="row block"></div>
         </div>
-    </nav>
 
-    <!---Block-->
+        <!---Section-->
+        <!---Desktop-->
+        <div class="container-fluid d-none d-xl-block">
+            <div class="row">
+                <!---Contact Info-->
+                <div class="col-xl-3 section-border pt-3 pl-4">
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Contact</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-5">
+                        <div class="col-12 mb-4 section-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="icon-color fa fa-phone-alt fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;+46 764 220 155</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 section-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="icon-color fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;mgbealby@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="icon-color fa fa-map-marker-alt fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;Stockholm, Johanneshov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Personal</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3 section-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="icon-color fa fa-male fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;Born: UK, 1978</p>
+                                    <p style="font-weight: 300; font-size: 15px;">&ensp;Swedish Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="icon-color fa fa-comments fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;English – Mother Tongue</p>
+                                    <p style="font-weight: 300; font-size: 15px;">&ensp;Swedish – Level 2 (Berlitz)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Contact Form-->
+                <div class="col-xl-9 pt-3">
+                    <div class="row section-font">
+                        <div class="col-12 contact-form">
+                            <p class="text-uppercase text-center pb-3">Let's Connect</p>
+                            <div class="contact-border pl-5 pr-5 pt-4 pb-4">
+                                <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-3">
+                                        <div class="row">
+                                            <div class="col-10 offset-1 text-center">
+                                                <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="container-fluid">
-        <div class="row block"></div>
-    </div>
-
-    <!---Section-->
-    <!---Desktop-->
-    <div class="container-fluid d-none d-xl-block">
-        <div class="row">
-            <!---Contact Info-->
-            <div class="col-xl-3 section-border pt-3 pl-4">
+        <!---Tablet-->
+        <div class="container-fluid d-none d-md-block d-lg-none d-none d-lg-block d-xl-none">
+            <div class="row">
+                <!---Contact Info tablet-->
+                <div class="col-6 pt-3 tablet-padding-1">
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Contact</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-4">
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-phone-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;+46 764 220 155</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-envelope fa-1x" aria-hidden="true"></i>&ensp;&ensp;murray@bealby.org</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-map-marker-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;Stockholm, Johanneshov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 pt-3 tablet-padding-2">
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Personal</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3 section-content-mb mx-auto">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-male fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;Born: UK, 1978</p>
+                                    <p style="font-weight: 300; font-size: 20px;">&ensp;Swedish Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-comments fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;&ensp;English – Mother Tongue</p>
+                                    <p style="font-weight: 300; font-size: 20px;">&ensp;&ensp;Swedish – Level 2 (Berlitz)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---Contact Form tablet-->
+            <div class="col-12 pt-3 mt-3">
                 <div class="row section-font">
-                    <div class="col-12">
-                        <p class="text-uppercase">Contact</p>
-                    </div>
-                </div>
-                <div class="row mt-3 mb-5">
-                    <div class="col-12 mb-4 section-content">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="icon-color fa fa-phone-alt fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;+46 764 220 155</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mb-4 section-content">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="icon-color fa fa-envelope fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;mgbealby@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="icon-color fa fa-map-marker-alt fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;Stockholm, Johanneshov
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-font">
-                    <div class="col-12">
-                        <p class="text-uppercase">Personal</p>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 mb-3 section-content">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="icon-color fa fa-male fa-3x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;Born: UK, 1978</p>
-                                <p style="font-weight: 300; font-size: 15px;">&ensp;Swedish Citizen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content">
-                        <div class="row">
-                            <div class="col-2">
-                                <i class="icon-color fa fa-comments fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-10">
-                                <p class="mb-0" style="font-weight: 300; font-size: 15px;">&ensp;English – Mother Tongue
-                                </p>
-                                <p style="font-weight: 300; font-size: 15px;">&ensp;Swedish – Level 2 (Berlitz)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!---Contact Form-->
-            <div class="col-xl-9 pt-3">
-                <div class="row section-font">
-                    <div class="col-12 contact-form">
+                    <div class="col-12 contact-form-tablet">
                         <p class="text-uppercase text-center pb-3">Let's Connect</p>
                         <div class="contact-border pl-5 pr-5 pt-4 pb-4">
                             <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="text" name="name" class="form-control section-content mt-3"
-                                            id="fullname" placeholder="Name" required />
+                                        <input type="text" name="name" class="form-control section-content mt-3" id="fullname" placeholder="Name" required />
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="email" name="emailaddress"
-                                            class="form-control section-content mt-3" id="emailaddress"
-                                            placeholder="Email" required />
+                                        <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
                                     </div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-12">
-                                        <textarea rows="5" name="comment" class="form-control section-content mt-3"
-                                            id="comment" placeholder="Comment" required></textarea>
+                                        <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
                                     </div>
                                 </div>
                                 <div class="container pt-3">
                                     <div class="row">
                                         <div class="col-10 offset-1 text-center">
-                                            <button type="submit"
-                                                class="btn btn-font text-center default-button">SEND&ensp;<i
-                                                    class="fas fa-paper-plane"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!---Tablet-->
-    <div class="container-fluid d-none d-md-block d-lg-none d-none d-lg-block d-xl-none">
-        <div class="row">
-            <!---Contact Info tablet-->
-            <div class="col-6 pt-3 tablet-padding-1">
-                <div class="row section-font">
-                    <div class="col-12">
-                        <p class="text-uppercase">Contact</p>
-                    </div>
-                </div>
-                <div class="row mt-3 mb-4">
-                    <div class="col-12 mb-4 section-content-mb">
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-phone-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;+46
-                                    764 220 155</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mb-4 section-content-mb">
-                        <div class="row">
-                            <div class="col-12 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-envelope fa-1x"
-                                        aria-hidden="true"></i>&ensp;&ensp;murray@bealby.org</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content-mb">
-                        <div class="row">
-                            <div class="col-12 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-map-marker-alt fa-1x"
-                                        aria-hidden="true"></i>&ensp;&ensp;Stockholm, Johanneshov</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 pt-3 tablet-padding-2">
-                <div class="row section-font">
-                    <div class="col-12">
-                        <p class="text-uppercase">Personal</p>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 mb-3 section-content-mb mx-auto">
-                        <div class="row">
-                            <div class="col-1">
-                                <i class="icon-color fa fa-male fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-11">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;Born: UK, 1978</p>
-                                <p style="font-weight: 300; font-size: 20px;">&ensp;Swedish Citizen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content">
-                        <div class="row">
-                            <div class="col-1">
-                                <i class="icon-color fa fa-comments fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-11">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;">&ensp;&ensp;English – Mother
-                                    Tongue</p>
-                                <p style="font-weight: 300; font-size: 20px;">&ensp;&ensp;Swedish – Level 2 (Berlitz)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!---Contact Form tablet-->
-        <div class="col-12 pt-3 mt-3">
-            <div class="row section-font">
-                <div class="col-12 contact-form-tablet">
-                    <p class="text-uppercase text-center pb-3">Let's Connect</p>
-                    <div class="contact-border pl-5 pr-5 pt-4 pb-4">
-                        <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
-                            <div class="row">
-                                <div class="col-12">
-                                    <input type="text" name="name" class="form-control section-content mt-3"
-                                        id="fullname" placeholder="Name" required />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <input type="email" name="emailaddress" class="form-control section-content mt-3"
-                                        id="emailaddress" placeholder="Email" required />
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12">
-                                    <textarea rows="5" name="comment" class="form-control section-content mt-3"
-                                        id="comment" placeholder="Comment" required></textarea>
-                                </div>
-                            </div>
-                            <div class="container pt-3">
-                                <div class="row">
-                                    <div class="col-10 offset-1 text-center">
-                                        <button type="submit"
-                                            class="btn btn-font text-center default-button">SEND&ensp;<i
-                                                class="fas fa-paper-plane"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!---Mobile-->
-    <div class="container-fluid d-none d-sm-block d-md-none d-block d-sm-none">
-        <div class="row">
-            <!---Contact Info mb-->
-            <div class="col-12 pt-3 mb-padding">
-                <div class="row section-font">
-                    <div class="col-12">
-                        <p class="text-uppercase">Contact</p>
-                    </div>
-                </div>
-                <div class="row mt-3 mb-4">
-                    <div class="col-12 mb-4 section-content-mb">
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-phone-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;+46
-                                    764 220 155</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mb-4 section-content-mb">
-                        <div class="row">
-                            <div class="col-12 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-envelope fa-1x"
-                                        aria-hidden="true"></i>&ensp;&ensp;mgbealby@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content-mb">
-                        <div class="row">
-                            <div class="col-12 pt-2">
-                                <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i
-                                        class="icon-color fa fa-map-marker-alt fa-1x"
-                                        aria-hidden="true"></i>&ensp;&ensp;Stockholm, Johanneshov</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-font pt-4">
-                    <div class="col-12">
-                        <p class="text-uppercase">Personal</p>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-12 mb-3 section-content-mb mx-auto">
-                        <div class="row">
-                            <div class="col-1">
-                                <i class="icon-color fa fa-male fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-11">
-                                <p class="mb-0" style="font-weight: 300; font-size: 18px;">&nbsp;Born: UK, 1978</p>
-                                <p style="font-weight: 300; font-size: 18px;">&nbsp;Swedish Citizen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 section-content-mb">
-                        <div class="row">
-                            <div class="col-1">
-                                <i class="icon-color fa fa-comments fa-1x" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-11">
-                                <p class="mb-0" style="font-weight: 300; font-size: 18px;">&nbsp;English – Mother Tongue
-                                </p>
-                                <p style="font-weight: 300; font-size: 18px;">&nbsp;Swedish – Level 2 (Berlitz)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!---Contact Form mb-->
-            <div class="col-12 pt-5">
-                <div class="row section-font">
-                    <p class="text-uppercase mb-padding pb-3">Let's Connect</p>
-                    <div class="col-12 contact-form-mb">
-                        <div class="contact-border pl-4 pr-4 pt-4 pb-4">
-                            <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="text" name="name" class="form-control section-content mt-3"
-                                            id="name" placeholder="Name" required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="email" name="emailaddress"
-                                            class="form-control section-content mt-3" id="emailaddress"
-                                            placeholder="Email" required />
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-12">
-                                        <textarea rows="5" name="comment" class="form-control section-content mt-3"
-                                            id="comment" placeholder="Comment" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="container pt-3">
-                                    <div class="row">
-                                        <div class="col-10 offset-1 text-center">
-                                            <button type="submit"
-                                                class="btn btn-font text-center default-button">SEND&ensp;<i
-                                                    class="fas fa-paper-plane"></i></button>
+                                            <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -510,58 +345,149 @@
             </div>
         </div>
 
-        <!-- Scroll to top of page arrow -->
-        <div class="page-top-button shadow-sm rounded-0 border border-black">
-            <a class="page-top-link d-flex h-100">
-                <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
-            </a>
-        </div>
-    </div>
-
-    <!---Block-->
-
-    <div class="container-fluid">
-        <div class="row block"></div>
-    </div>
-
-    <!---Footer-->
-
-    <footer>
-        <div class="container-fluid">
+        <!---Mobile-->
+        <div class="container-fluid d-none d-sm-block d-md-none d-block d-sm-none">
             <div class="row">
-                <div class="col-md-6 pt-3 d-none d-lg-block">
-                    <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">About</p>
-                    <p class="footer-padding" style="font-weight: 300; font-size: 15px;">
-                        I am a qualified Full Stack Web Developer experienced in HTML, CSS, Javascript and Python.
-                    </p>
+                <!---Contact Info mb-->
+                <div class="col-12 pt-3 mb-padding">
+                    <div class="row section-font">
+                        <div class="col-12">
+                            <p class="text-uppercase">Contact</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-4">
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-phone-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;+46 764 220 155</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-envelope fa-1x" aria-hidden="true"></i>&ensp;&ensp;mgbealby@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content-mb">
+                            <div class="row">
+                                <div class="col-12 pt-2">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 20px;"><i class="icon-color fa fa-map-marker-alt fa-1x" aria-hidden="true"></i>&ensp;&ensp;Stockholm, Johanneshov</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section-font pt-4">
+                        <div class="col-12">
+                            <p class="text-uppercase">Personal</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3 section-content-mb mx-auto">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-male fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 18px;">&nbsp;Born: UK, 1978</p>
+                                    <p style="font-weight: 300; font-size: 18px;">&nbsp;Swedish Citizen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 section-content-mb">
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="icon-color fa fa-comments fa-1x" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="mb-0" style="font-weight: 300; font-size: 18px;">&nbsp;English – Mother Tongue</p>
+                                    <p style="font-weight: 300; font-size: 18px;">&nbsp;Swedish – Level 2 (Berlitz)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 pt-3">
-                    <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">Download My CV</p>
-                    <p class="" style="font-weight: 300; font-size: 15px;">
-                        A printable CV can be found here&ensp;
-                        <a href="assets/cv/murray-bealby.pdf" target="_blank" class="cv-pdf"><i
-                                class="fa fa-download footer" aria-hidden="true"></i></a>
-                    </p>
+                <!---Contact Form mb-->
+                <div class="col-12 pt-5">
+                    <div class="row section-font">
+                        <p class="text-uppercase mb-padding pb-3">Let's Connect</p>
+                        <div class="col-12 contact-form-mb">
+                            <div class="contact-border pl-4 pr-4 pt-4 pb-4">
+                                <form onsubmit="return sendMail(this);" class="form-fields" id="myForm">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="text" name="name" class="form-control section-content mt-3" id="name" placeholder="Name" required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input type="email" name="emailaddress" class="form-control section-content mt-3" id="emailaddress" placeholder="Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <textarea rows="5" name="comment" class="form-control section-content mt-3" id="comment" placeholder="Comment" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="container pt-3">
+                                        <div class="row">
+                                            <div class="col-10 offset-1 text-center">
+                                                <button type="submit" class="btn btn-font text-center default-button">SEND&ensp;<i class="fas fa-paper-plane"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Scroll to top of page arrow -->
+            <div class="page-top-button shadow-sm rounded-0 border border-black">
+                <a class="page-top-link d-flex h-100">
+                    <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+                </a>
+            </div>
         </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/email.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
+        <!---Block-->
 
+        <div class="container-fluid">
+            <div class="row block"></div>
+        </div>
+
+        <!---Footer-->
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 pt-3 d-none d-lg-block">
+                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">About</p>
+                        <p class="footer-padding" style="font-weight: 300; font-size: 15px;">
+                            I am a qualified Full Stack Web Developer experienced in HTML, CSS, Javascript and Python.
+                        </p>
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">Download My CV</p>
+                        <p class="" style="font-weight: 300; font-size: 15px;">
+                            A printable CV can be found here&ensp;
+                            <a href="assets/cv/murray-bealby.pdf" target="_blank" class="cv-pdf"><i class="fa fa-download footer" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/email.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
 </html>
