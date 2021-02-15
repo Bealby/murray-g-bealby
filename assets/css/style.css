@@ -351,8 +351,13 @@ textarea:-ms-input-placeholder {
 	-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
 	-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
 	box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
-	color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255) !important;
 	font-size: 20px;
+}
+
+.btn-font-project a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
 }
 
 .btn-font-project:hover,
