@@ -1,602 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
-        <title>Murray Bealby</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Murray Bealby</title>
 
-    <body>
-        <!---Header - Mobile -->
-        <div class="container-fluid d-xl-none">
-            <div class="row header">
-                <div class="col text-center decoration">
-                    <a href="about.html"><p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p></a>
-                    <a href="about.html"><p class="header-role-mb">Full Stack Web Developer</p></a>
-                </div>
-            </div>
-        </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+</head>
 
-        <!---Mobile Toggle-->
-
-        <div class="container-fluid d-xl-none">
-            <div class="row menu-icon text-center">
-                <div class="col">
-                    <span onclick="openMenu()">&#9776;</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-container" id="navbar">
-            <span class="closebtn" onclick="closeMenu()">&times;</span>
-            <div class="menu-content">
-                <a href="about.html" class="text-uppercase">About</a>
-                <a href="resume.html" class="text-uppercase">Résumé</a>
-                <a href="interests.html" class="text-uppercase">Interests</a>
-                <a href="contact.html" class="text-uppercase">Contact</a>
-                <a href="github.html" class="text-uppercase">Projects</a>
-            </div>
-        </div>
-
-        <!---Navbar-->
-
-        <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
-            <div class="row header">
-                <div class="col text-center decoration">
-                    <a href="about.html"><p class="mb-0 text-uppercase header-name">Murray Bealby</p></a>
-                    <a href="about.html"><p class="header-role">Full Stack Web Developer</p></a>
-                </div>
-            </div>
-            <div class="navbar-collapse navbar-main" id="navbarNav">
-                <ul class="navbar-nav mx-auto my-auto navbar-font">
-                    <li class="nav-item active">
-                        <a class="nav-link text-uppercase home-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="about.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Home
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase resume-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="resume.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Résumé
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase interests-box hvr-sweep-to-bottom pt-3 pl-1 pr-1 pb-3" href="interests.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Interests
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase contact-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3" href="contact.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    Contact
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase github-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3" href="github.html">
-                            <div class="row">
-                                <div class="col-12 text-center pb-1">
-                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-12 text-center">
-                                    GitHub
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!---Block-->
-
-        <div class="container-fluid">
-            <div class="row block"></div>
-        </div>
-
-        <!---Section-->
-        <!---Desktop-->
-        <div class="container-fluid d-none d-xl-block">
-            <div class="row">
-                <div class="col-3 section-border pt-3 pl-5">
-                    <div class="row section-font">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Code</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Coding</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">HTML</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">CSS</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Javascript</p>
-                            <p class="mb-1" style="font-weight: 300; font-size: 15px;">Python</p>
-                        </div>
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Hosting</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Bootstrap</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">GitHub</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Heroku</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Data</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">SQL</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Postgres</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">MongoDB</p>
-                        </div>
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Framworks</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Django</p>
-                            <ul>
-                                <li style="font-weight: 300; font-size: 15px;">Stripe</li>
-                                <li style="font-weight: 300; font-size: 15px;">AWS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row section-font mt-5">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Computer</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Office</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Excel</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Word</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">PowerPoint</p>
-                        </div>
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Adobe</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Indesign</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Illustrator</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Photoshop</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Finance</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">iScala</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">SAP</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">BIS Warehouse</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">IFS</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Cognos</p>
-                        </div>
-                        <div class="col-6 section-content">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Finance</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Travel Base</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Sabre</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Sage</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 15px;">Oracle</p>
-                        </div>
-                    </div>
-                </div>
-                <!---2nd Section-->
-                <div class="col-9 pt-3 pl-5">
-                    <div class="row section-font">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fas fa-briefcase fa-1x" aria-hidden="true"></i>&ensp;Work Experience</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3 mr-5">
-                        <div class="col-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                <div class="row">
-                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2013 – 2019:&ensp;&ensp;<span style="font-weight: 400;">MICHELIN NORDIC AB</span></div>
-                                                    <div class="col-6 text-right">
-                                                        <img src="assets/images/michelin.png" alt="Michelin Logo" width="120" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body section-content">
-                                            <p style="font-weight: 600; font-size: 20px;">Management Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 15px;">
-                                                <li>Reported sales and stock on a monthly/ yearly basis. Analysed and investigated anomalies in stock differentials</li>
-                                                <li>Management of Fixed Assets: Calculated depreciations. Maintained stock control in warehouse. Initiated scrapping and carried out impairment analysis</li>
-                                                <li>In charge of bank reconciliations and bookings for four Michelin entities. As well as approving bank payments</li>
-                                                <li>
-                                                    I was part of the team in transitioning from our local financial systems to our centralised financial systems. Also supported in making risk assessment analysis and planning a timetable of
-                                                    action plans
-                                                </li>
-                                            </ul>
-                                            <p style="font-weight: 600; font-size: 20px;">General Ledger & Intercompany Account</p>
-                                            <ul style="font-weight: 300; font-size: 15px;">
-                                                <li>Consolidated, prepared and reported financial results, for month and year end closing, to the main headquarters in France</li>
-                                                <li>Organized month end tasks and was responsible for on time reporting</li>
-                                                <li>Responsible for General Ledger and Inter-company transactions</li>
-                                                <li>Supported the Financial Controller and CFO in the preparation of the audit</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <div class="row">
-                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2011 – 2013:&ensp;&ensp;<span style="font-weight: 400;">ERICSSON AB</span></div>
-                                                    <div class="col-6 text-right">
-                                                        <img src="assets/images/ericcson.png" alt="Michellin Logo" width="60" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body section-content">
-                                            <p style="font-weight: 600; font-size: 20px;">Cost Center Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 15px;">
-                                                <li>Performed monthly and yearly technical analysis of accounts</li>
-                                                <li>Supported the organization in financial matters and systems</li>
-                                                <li>Provided and ensured quality in financial reporting for month/year end closing</li>
-                                                <li>Supported operations in preparing forecasts</li>
-                                                <li>Prepared standard reports for Cost Centers</li>
-                                                <li>Sent monthly ‘actual vs forecast’ reports, with comments, to the CFO</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <div class="row">
-                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2008 – 2011:&ensp;&ensp;<span style="font-weight: 400;">ORIFLAME COSMETICS AB</span></div>
-                                                    <div class="col-6 text-right">
-                                                        <img src="assets/images/oriflame.png" alt="Michellin Logo" width="100" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body section-content">
-                                            <p style="font-weight: 600; font-size: 20px;">Financial Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 15px;">
-                                                <li>Prepared timely and accurate financial reports on behalf of Oriflame entity for Group and Local statutory purposes in the month and year end closing</li>
-                                                <li>Responsible for authority reporting and tax declaration (corporate income tax, VAT, statistical reporting)</li>
-                                                <li>Reconciliation of bank accounts</li>
-                                                <li>Issued invoices to Oriflame entities worldwide, receiving and posting customer payments and applying withholding tax where appropriate</li>
-                                                <li>Prepared monthly Cash Flows</li>
-                                                <li>Validated, processed and booked supplier invoices</li>
-                                                <li>Managed the ‘Shared Services Finance’ content on the internal Oriflame intranet</li>
-                                                <li>Project managed the centralisation of financial services from offshore operations</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingFour">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                <div class="row">
-                                                    <div class="col-6 work-title mt-2"><i class="fas fa-chevron-down"></i>&ensp;&ensp;2007 – 2008:&ensp;&ensp;<span style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
-                                                    <div class="col-6 text-right">
-                                                        <img src="assets/images/folkuniversitetet.png" alt="Michellin Logo" width="100" />
-                                                    </div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                        <div class="card-body section-content">
-                                            <p style="font-weight: 600; font-size: 20px;">Business English Teacher</p>
-                                            <ul style="font-weight: 300; font-size: 15px;">
-                                                <li>Taught Business English; Working in English; and general English to adult learners at various companies around Stockholm & Madrid – ranging from beginners to advanced</li>
-                                                <li>With the variety of courses taught, It was essential to be organized, methodical, accurate</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!---Mobile-->
-        <div class="container-fluid d-xl-none">
-            <div class="row">
-                <!---skills Mobile-->
-                <div class="col-12 section-border pt-3 pl-4">
-                    <div class="row section-font-mb">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Code</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Coding</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">HTML</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">CSS</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Javascript</p>
-                            <p class="mb-1" style="font-weight: 300; font-size: 20px;">Python</p>
-                        </div>
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Hosting</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Bootstrap</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">GitHub</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Heroku</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Data</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">SQL</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Postgres</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">MongoDB</p>
-                        </div>
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Framworks</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Django</p>
-                            <ul>
-                                <li style="font-weight: 300; font-size: 20px;">Stripe</li>
-                                <li style="font-weight: 300; font-size: 20px;">AWS</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row section-font-mb mt-5">
-                        <div class="col-12">
-                            <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Computer</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Office</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Excel</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Word</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">PowerPoint</p>
-                        </div>
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Adobe</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Indesign</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Illustrator</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Photoshop</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Finance</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">iScala</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">SAP</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">BIS Warehouse</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">IFS</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Cognos</p>
-                        </div>
-                        <div class="col-6 section-content-mb">
-                            <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Finance</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Travel Base</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Sabre</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Sage</p>
-                            <p class="mb-0" style="font-weight: 300; font-size: 20px;">Oracle</p>
-                        </div>
-                    </div>
-                </div>
-                <!---Work Mobile-->
-                <div class="col-12 pt-3 pl-4 pr-4 mt-4">
-                    <div class="row section-font">
-                        <div class="col-12 pr-0 text-left">
-                            <p class="text-uppercase"><i class="fas fa-briefcase fa-1x" aria-hidden="true"></i>&ensp;Work Experience</p>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <div class="accordion" id="accordionExample">
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center">2013 – 2019:</div>
-                                                    <div class="col-12 work-title text-center"><span style="font-weight: 400;">MICHELIN NORDIC AB</span></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center"><i class="fas fa-chevron-down"></i></div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                        <div class="card-body section-content-mb">
-                                            <p style="font-weight: 600; font-size: 24px;">Management Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 20px;">
-                                                <li>Reported sales and stock on a monthly/ yearly basis. Analysed and investigated anomalies in stock differentials</li>
-                                                <li>Management of Fixed Assets: Calculated depreciations. Maintained stock control in warehouse. Initiated scrapping and carried out impairment analysis</li>
-                                                <li>In charge of bank reconciliations and bookings for four Michelin entities. As well as approving bank payments</li>
-                                                <li>
-                                                    I was part of the team in transitioning from our local financial systems to our centralised financial systems. Also supported in making risk assessment analysis and planning a timetable of
-                                                    action plans
-                                                </li>
-                                            </ul>
-                                            <p style="font-weight: 600; font-size: 24px;">General Ledger & Intercompany Account</p>
-                                            <ul style="font-weight: 300; font-size: 20px;">
-                                                <li>Consolidated, prepared and reported financial results, for month and year end closing, to the main headquarters in France</li>
-                                                <li>Organized month end tasks and was responsible for on time reporting</li>
-                                                <li>Responsible for General Ledger and Inter-company transactions</li>
-                                                <li>Supported the Financial Controller and CFO in the preparation of the audit</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center">2011 – 2013:</div>
-                                                    <div class="col-12 work-title text-center"><span style="font-weight: 400;">ERICSSON AB</span></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center"><i class="fas fa-chevron-down"></i></div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                        <div class="card-body section-content-mb">
-                                            <p style="font-weight: 600; font-size: 24px;">Cost Center Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 20px;">
-                                                <li>Performed monthly and yearly technical analysis of accounts</li>
-                                                <li>Supported the organization in financial matters and systems</li>
-                                                <li>Provided and ensured quality in financial reporting for month/year end closing</li>
-                                                <li>Supported operations in preparing forecasts</li>
-                                                <li>Prepared standard reports for Cost Centers</li>
-                                                <li>Sent monthly ‘actual vs forecast’ reports, with comments, to the CFO</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingThree">
-                                        <h2 class="mb-0">
-                                            <button
-                                                class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0"
-                                                type="button"
-                                                data-toggle="collapse"
-                                                data-target="#collapseThree"
-                                                aria-expanded="false"
-                                                aria-controls="collapseThree"
-                                            >
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center">2008 – 2011:</div>
-                                                    <div class="col-12 work-title text-center"><span style="font-weight: 400;">ORIFLAME COSMETICS AB</span></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center"><i class="fas fa-chevron-down"></i></div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                        <div class="card-body sexction-content-mb">
-                                            <p style="font-weight: 600; font-size: 24px;">Financial Accountant</p>
-                                            <ul style="font-weight: 300; font-size: 20px;">
-                                                <li>Prepared timely and accurate financial reports on behalf of Oriflame entity for Group and Local statutory purposes in the month and year end closing</li>
-                                                <li>Responsible for authority reporting and tax declaration (corporate income tax, VAT, statistical reporting)</li>
-                                                <li>Reconciliation of bank accounts</li>
-                                                <li>Issued invoices to Oriflame entities worldwide, receiving and posting customer payments and applying withholding tax where appropriate</li>
-                                                <li>Prepared monthly Cash Flows</li>
-                                                <li>Validated, processed and booked supplier invoices</li>
-                                                <li>Managed the ‘Shared Services Finance’ content on the internal Oriflame intranet</li>
-                                                <li>Project managed the centralisation of financial services from offshore operations</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mb-4">
-                                    <div class="card-header" id="headingFour">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center">2007 – 2008:</div>
-                                                    <div class="col-12 work-title text-center"><span style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12 work-title text-center"><i class="fas fa-chevron-down"></i></div>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                    </div>
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                                        <div class="card-body section-content-mb">
-                                            <p style="font-weight: 600; font-size: 24px;">Business English Teacher</p>
-                                            <ul style="font-weight: 300; font-size: 20px;">
-                                                <li>Taught Business English; Working in English; and general English to adult learners at various companies around Stockholm & Madrid – ranging from beginners to advanced</li>
-                                                <li>With the variety of courses taught, It was essential to be organized, methodical, accurate</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Scroll to top of page arrow -->
-            <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
-                <a class="page-top-link d-flex h-100">
-                    <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+<body>
+    <!---Header - Mobile -->
+    <div class="container-fluid d-xl-none">
+        <div class="row header">
+            <div class="col text-center decoration">
+                <a href="about.html">
+                    <p class="mb-0 text-uppercase header-name-mb">Murray Bealby</p>
+                </a>
+                <a href="about.html">
+                    <p class="header-role-mb">Full Stack Web Developer</p>
                 </a>
             </div>
         </div>
+    </div>
 
-        <!---Block-->
+    <!---Mobile Toggle-->
 
-        <div class="container-fluid">
-            <div class="row block"></div>
+    <div class="container-fluid d-xl-none">
+        <div class="row menu-icon text-center">
+            <div class="col">
+                <span onclick="openMenu()">&#9776;</span>
+            </div>
         </div>
+    </div>
 
-        <!---Footer-->
+    <div class="menu-container" id="navbar">
+        <span class="closebtn" onclick="closeMenu()">&times;</span>
+        <div class="menu-content">
+            <a href="about.html" class="text-uppercase">About</a>
+            <a href="resume.html" class="text-uppercase">Résumé</a>
+            <a href="interests.html" class="text-uppercase">Interests</a>
+            <a href="contact.html" class="text-uppercase">Contact</a>
+            <a href="github.html" class="text-uppercase">Projects</a>
+        </div>
+    </div>
 
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 pt-3 d-none d-lg-block">
-                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">About</p>
-                        <p class="footer-padding" style="font-weight: 300; font-size: 15px;">
-                            I am a qualified Full Stack Web Developer experienced in HTML, CSS, Javascript and Python, who is looking for a role in financial technology.
-                        </p>
-                    </div>
-                    <div class="col-md-6 pt-3">
-                        <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">Download My CV</p>
-                        <p class="" style="font-weight: 300; font-size: 15px;">
-                            A printable CV can be found here&ensp;
-                            <a href="assets/cv/murray-bealby.pdf" target="_blank" class="cv-pdf"><i class="fa fa-download footer" aria-hidden="true"></i></a>
+    <!---Navbar-->
+
+    <nav class="navbar navbar-expand-sm navbar-color pt-3 pb-0 d-none d-xl-block sticky-top">
+        <div class="row header">
+            <div class="col text-center decoration">
+                <a href="about.html">
+                    <p class="mb-0 text-uppercase header-name">Murray Bealby</p>
+                </a>
+                <a href="about.html">
+                    <p class="header-role">Full Stack Web Developer</p>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse navbar-main" id="navbarNav">
+            <ul class="navbar-nav mx-auto my-auto navbar-font">
+                <li class="nav-item active">
+                    <a class="nav-link text-uppercase home-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3"
+                        href="about.html">
+                        <div class="row">
+                            <div class="col-12 text-center pb-1">
+                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-12 text-center">
+                                Home
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase resume-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3"
+                        href="resume.html">
+                        <div class="row">
+                            <div class="col-12 text-center pb-1">
+                                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-12 text-center">
+                                Résumé
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase interests-box hvr-sweep-to-bottom pt-3 pl-1 pr-1 pb-3"
+                        href="interests.html">
+                        <div class="row">
+                            <div class="col-12 text-center pb-1">
+                                <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-12 text-center">
+                                Interests
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase contact-box hvr-sweep-to-bottom pt-3 pl-2 pr-2 pb-3"
+                        href="contact.html">
+                        <div class="row">
+                            <div class="col-12 text-center pb-1">
+                                <i class="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-12 text-center">
+                                Contact
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase github-box hvr-sweep-to-bottom pt-3 pl-3 pr-3 pb-3"
+                        href="github.html">
+                        <div class="row">
+                            <div class="col-12 text-center pb-1">
+                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-12 text-center">
+                                GitHub
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!---Block-->
+
+    <div class="container-fluid">
+        <div class="row block"></div>
+    </div>
+
+    <!---Section-->
+    <!---Desktop-->
+    <div class="container-fluid d-none d-xl-block">
+        <div class="row">
+            <div class="col-3 section-border pt-3 pl-5">
+                <div class="row section-font">
+                    <div class="col-12">
+                        <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Code
                         </p>
                     </div>
                 </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Coding</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">HTML</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">CSS</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Javascript</p>
+                        <p class="mb-1" style="font-weight: 300; font-size: 15px;">Python</p>
+                    </div>
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Hosting</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Bootstrap</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">GitHub</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Heroku</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Data</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">SQL</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Postgres</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">MongoDB</p>
+                    </div>
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Framworks</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Django</p>
+                        <ul>
+                            <li style="font-weight: 300; font-size: 15px;">Stripe</li>
+                            <li style="font-weight: 300; font-size: 15px;">AWS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row section-font mt-5">
+                    <div class="col-12">
+                        <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x"
+                                aria-hidden="true"></i>&ensp;Computer</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Office</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Excel</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Word</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">PowerPoint</p>
+                    </div>
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Adobe</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Indesign</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Illustrator</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Photoshop</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Finance</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">iScala</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">SAP</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">BIS Warehouse</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">IFS</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Cognos</p>
+                    </div>
+                    <div class="col-6 section-content">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 20px;">Finance</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Travel Base</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Sabre</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Sage</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 15px;">Oracle</p>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <!---2nd Section-->
+            <div class="col-9 pt-3 pl-5">
+                <div class="row section-font">
+                    <div class="col-12">
+                        <p class="text-uppercase"><i class="fas fa-briefcase fa-1x" aria-hidden="true"></i>&ensp;Work
+                            Experience</p>
+                    </div>
+                </div>
+                <div class="row mt-3 mr-5">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            <div class="row">
+                                                <div class="col-6 work-title mt-2"><i
+                                                        class="fas fa-chevron-down"></i>&ensp;&ensp;2013 –
+                                                    2019:&ensp;&ensp;<span style="font-weight: 400;">MICHELIN NORDIC
+                                                        AB</span></div>
+                                                <div class="col-6 text-right">
+                                                    <img src="assets/images/michelin.png" alt="Michelin Logo"
+                                                        width="120" />
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="assets/js/navbar.js"></script>
-        <script src="assets/js/scroll.js"></script>
-    </body>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content">
+                                        <p style="font-weight: 600; font-size: 20px;">Management Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 15px;">
+                                            <li>Reported sales and stock on a monthly/ yearly basis. Analysed and
+                                                investigated anomalies in stock differentials</li>
+                                            <li>Management of Fixed Assets: Calculated depreciations. Maintained stock
+                                                control in warehouse. Initiated scrapping and carried out impairment
+                                                analysis</li>
+                                            <li>In charge of bank reconciliations and bookings for four Michelin
+                                                entities. As well as approving bank payments</li>
+                                            <li>
+                                                I was part of the team in transitioning from our local financial systems
+                                                to our centralised financial systems. Also supported in making risk
+                                                assessment analysis and planning a timetable of
+                                                action plans
+                                            </li>
+                                        </ul>
+                                        <p style="font-weight: 600; font-size: 20px;">General Ledger & Intercompany
+                                            Account</p>
+                                        <ul style="font-weight: 300; font-size: 15px;">
+                                            <li>Consolidated, prepared and reported financial results, for month and
+                                                year end closing, to the main headquarters in France</li>
+                                            <li>Organized month end tasks and was responsible for on time reporting</li>
+                                            <li>Responsible for General Ledger and Inter-company transactions</li>
+                                            <li>Supported the Financial Controller and CFO in the preparation of the
+                                                audit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <div class="row">
+                                                <div class="col-6 work-title mt-2"><i
+                                                        class="fas fa-chevron-down"></i>&ensp;&ensp;2011 –
+                                                    2013:&ensp;&ensp;<span style="font-weight: 400;">ERICSSON AB</span>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <img src="assets/images/ericcson.png" alt="Michellin Logo"
+                                                        width="60" />
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content">
+                                        <p style="font-weight: 600; font-size: 20px;">Cost Center Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 15px;">
+                                            <li>Performed monthly and yearly technical analysis of accounts</li>
+                                            <li>Supported the organization in financial matters and systems</li>
+                                            <li>Provided and ensured quality in financial reporting for month/year end
+                                                closing</li>
+                                            <li>Supported operations in preparing forecasts</li>
+                                            <li>Prepared standard reports for Cost Centers</li>
+                                            <li>Sent monthly ‘actual vs forecast’ reports, with comments, to the CFO
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <div class="row">
+                                                <div class="col-6 work-title mt-2"><i
+                                                        class="fas fa-chevron-down"></i>&ensp;&ensp;2008 –
+                                                    2011:&ensp;&ensp;<span style="font-weight: 400;">ORIFLAME COSMETICS
+                                                        AB</span></div>
+                                                <div class="col-6 text-right">
+                                                    <img src="assets/images/oriflame.png" alt="Michellin Logo"
+                                                        width="100" />
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content">
+                                        <p style="font-weight: 600; font-size: 20px;">Financial Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 15px;">
+                                            <li>Prepared timely and accurate financial reports on behalf of Oriflame
+                                                entity for Group and Local statutory purposes in the month and year end
+                                                closing</li>
+                                            <li>Responsible for authority reporting and tax declaration (corporate
+                                                income tax, VAT, statistical reporting)</li>
+                                            <li>Reconciliation of bank accounts</li>
+                                            <li>Issued invoices to Oriflame entities worldwide, receiving and posting
+                                                customer payments and applying withholding tax where appropriate</li>
+                                            <li>Prepared monthly Cash Flows</li>
+                                            <li>Validated, processed and booked supplier invoices</li>
+                                            <li>Managed the ‘Shared Services Finance’ content on the internal Oriflame
+                                                intranet</li>
+                                            <li>Project managed the centralisation of financial services from offshore
+                                                operations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <div class="row">
+                                                <div class="col-6 work-title mt-2"><i
+                                                        class="fas fa-chevron-down"></i>&ensp;&ensp;2007 –
+                                                    2008:&ensp;&ensp;<span
+                                                        style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
+                                                <div class="col-6 text-right">
+                                                    <img src="assets/images/folkuniversitetet.png" alt="Michellin Logo"
+                                                        width="100" />
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content">
+                                        <p style="font-weight: 600; font-size: 20px;">Business English Teacher</p>
+                                        <ul style="font-weight: 300; font-size: 15px;">
+                                            <li>Taught Business English; Working in English; and general English to
+                                                adult learners at various companies around Stockholm & Madrid – ranging
+                                                from beginners to advanced</li>
+                                            <li>With the variety of courses taught, It was essential to be organized,
+                                                methodical, accurate</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---Mobile-->
+    <div class="container-fluid d-xl-none">
+        <div class="row">
+            <!---skills Mobile-->
+            <div class="col-12 section-border pt-3 pl-4">
+                <div class="row section-font-mb">
+                    <div class="col-12">
+                        <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x" aria-hidden="true"></i>&ensp;Code
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Coding</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">HTML</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">CSS</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Javascript</p>
+                        <p class="mb-1" style="font-weight: 300; font-size: 20px;">Python</p>
+                    </div>
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Hosting</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Bootstrap</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">GitHub</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Heroku</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Data</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">SQL</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Postgres</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">MongoDB</p>
+                    </div>
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Framworks</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Django</p>
+                        <ul>
+                            <li style="font-weight: 300; font-size: 20px;">Stripe</li>
+                            <li style="font-weight: 300; font-size: 20px;">AWS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row section-font-mb mt-5">
+                    <div class="col-12">
+                        <p class="text-uppercase"><i class="fas fa-laptop-code fas-1x"
+                                aria-hidden="true"></i>&ensp;Computer</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Office</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Excel</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Word</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">PowerPoint</p>
+                    </div>
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Adobe</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Indesign</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Illustrator</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Photoshop</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Finance</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">iScala</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">SAP</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">BIS Warehouse</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">IFS</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Cognos</p>
+                    </div>
+                    <div class="col-6 section-content-mb">
+                        <p class="mb-1 pt-2" style="font-weight: 600; font-size: 24px;">Finance</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Travel Base</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Sabre</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Sage</p>
+                        <p class="mb-0" style="font-weight: 300; font-size: 20px;">Oracle</p>
+                    </div>
+                </div>
+            </div>
+            <!---Work Mobile-->
+            <div class="col-12 pt-3 pl-4 pr-4 mt-4">
+                <div class="row section-font">
+                    <div class="col-12 pr-0 text-left">
+                        <p class="text-uppercase"><i class="fas fa-briefcase fa-1x" aria-hidden="true"></i>&ensp;Work
+                            Experience</p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0"
+                                            type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center">2013 – 2019:</div>
+                                                <div class="col-12 work-title text-center"><span
+                                                        style="font-weight: 400;">MICHELIN NORDIC AB</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center"><i
+                                                        class="fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content-mb">
+                                        <p style="font-weight: 600; font-size: 24px;">Management Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 20px;">
+                                            <li>Reported sales and stock on a monthly/ yearly basis. Analysed and
+                                                investigated anomalies in stock differentials</li>
+                                            <li>Management of Fixed Assets: Calculated depreciations. Maintained stock
+                                                control in warehouse. Initiated scrapping and carried out impairment
+                                                analysis</li>
+                                            <li>In charge of bank reconciliations and bookings for four Michelin
+                                                entities. As well as approving bank payments</li>
+                                            <li>
+                                                I was part of the team in transitioning from our local financial systems
+                                                to our centralised financial systems. Also supported in making risk
+                                                assessment analysis and planning a timetable of
+                                                action plans
+                                            </li>
+                                        </ul>
+                                        <p style="font-weight: 600; font-size: 24px;">General Ledger & Intercompany
+                                            Account</p>
+                                        <ul style="font-weight: 300; font-size: 20px;">
+                                            <li>Consolidated, prepared and reported financial results, for month and
+                                                year end closing, to the main headquarters in France</li>
+                                            <li>Organized month end tasks and was responsible for on time reporting</li>
+                                            <li>Responsible for General Ledger and Inter-company transactions</li>
+                                            <li>Supported the Financial Controller and CFO in the preparation of the
+                                                audit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0"
+                                            type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center">2011 – 2013:</div>
+                                                <div class="col-12 work-title text-center"><span
+                                                        style="font-weight: 400;">ERICSSON AB</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center"><i
+                                                        class="fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content-mb">
+                                        <p style="font-weight: 600; font-size: 24px;">Cost Center Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 20px;">
+                                            <li>Performed monthly and yearly technical analysis of accounts</li>
+                                            <li>Supported the organization in financial matters and systems</li>
+                                            <li>Provided and ensured quality in financial reporting for month/year end
+                                                closing</li>
+                                            <li>Supported operations in preparing forecasts</li>
+                                            <li>Prepared standard reports for Cost Centers</li>
+                                            <li>Sent monthly ‘actual vs forecast’ reports, with comments, to the CFO
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center">2008 – 2011:</div>
+                                                <div class="col-12 work-title text-center"><span
+                                                        style="font-weight: 400;">ORIFLAME COSMETICS AB</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center"><i
+                                                        class="fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body sexction-content-mb">
+                                        <p style="font-weight: 600; font-size: 24px;">Financial Accountant</p>
+                                        <ul style="font-weight: 300; font-size: 20px;">
+                                            <li>Prepared timely and accurate financial reports on behalf of Oriflame
+                                                entity for Group and Local statutory purposes in the month and year end
+                                                closing</li>
+                                            <li>Responsible for authority reporting and tax declaration (corporate
+                                                income tax, VAT, statistical reporting)</li>
+                                            <li>Reconciliation of bank accounts</li>
+                                            <li>Issued invoices to Oriflame entities worldwide, receiving and posting
+                                                customer payments and applying withholding tax where appropriate</li>
+                                            <li>Prepared monthly Cash Flows</li>
+                                            <li>Validated, processed and booked supplier invoices</li>
+                                            <li>Managed the ‘Shared Services Finance’ content on the internal Oriflame
+                                                intranet</li>
+                                            <li>Project managed the centralisation of financial services from offshore
+                                                operations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed pt-0 pr-0 pb-0 pl-0"
+                                            type="button" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center">2007 – 2008:</div>
+                                                <div class="col-12 work-title text-center"><span
+                                                        style="font-weight: 400;">FOLKUNIVERSITETET</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 work-title text-center"><i
+                                                        class="fas fa-chevron-down"></i></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body section-content-mb">
+                                        <p style="font-weight: 600; font-size: 24px;">Business English Teacher</p>
+                                        <ul style="font-weight: 300; font-size: 20px;">
+                                            <li>Taught Business English; Working in English; and general English to
+                                                adult learners at various companies around Stockholm & Madrid – ranging
+                                                from beginners to advanced</li>
+                                            <li>With the variety of courses taught, It was essential to be organized,
+                                                methodical, accurate</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll to top of page arrow -->
+        <div class="page-top-button shadow-sm rounded-0 border border-black d-xl-none">
+            <a class="page-top-link d-flex h-100">
+                <i class="fas fa-chevron-up text-black mx-auto my-auto"></i>
+            </a>
+        </div>
+    </div>
+
+    <!---Block-->
+
+    <div class="container-fluid">
+        <div class="row block"></div>
+    </div>
+
+    <!---Footer-->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 pt-3 d-none d-lg-block">
+                    <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">About</p>
+                    <p class="footer-padding" style="font-weight: 300; font-size: 15px;">
+                        I am a qualified Full Stack Web Developer experienced in HTML, CSS, Javascript and Python, who
+                        is looking for a role in financial technology.
+                    </p>
+                </div>
+                <div class="col-md-6 pt-3">
+                    <p style="font-weight: 600; font-size: 24px;" class="uppercase mb-0">Download My CV</p>
+                    <p class="" style="font-weight: 300; font-size: 15px;">
+                        A printable CV can be found here&ensp;
+                        <a href="assets/cv/murray-bealby.pdf" target="_blank" class="cv-pdf"><i
+                                class="fa fa-download footer" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+
 </html>

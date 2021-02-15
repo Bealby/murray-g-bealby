@@ -1,94 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
-        <title>Murray Bealby</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Murray Bealby" content="Full Stack Web Developer - HTML CSS Python Javascript" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Murray Bealby</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script>
-            (function () {
-                emailjs.init("user_ltp9VN3EuB6AFgRZdXukW");
-            })();
-        </script>
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
 
-    <body class="intro-background">
-        <div class="container-fluid intro-background">
-            <!---Desktop-->
-            <div class="row d-none d-xl-block">
-                <div class="col-12">
-                    <p class="line-1 anim-typewriter-dt header-name">Murray Bealby</p>
-                    <p class="line-2 anim-typewriter2-dt header-role">Full Stack Web Developer</p>
-                </div>
+</head>
+
+<body class="intro-background">
+    <div class="container-fluid intro-background">
+        <!---Desktop-->
+        <div class="row d-none d-xl-block">
+            <div class="col-12">
+                <p class="line-1 anim-typewriter-dt header-name">Murray Bealby</p>
+                <p class="line-2 anim-typewriter2-dt header-role">Full Stack Web Developer</p>
             </div>
-            <!---Mobile-->
-            <div class="row d-xl-none">
-                <div class="col-12">
-                    <p class="line-1 anim-typewriter header-name-mb">Murray Bealby</p>
-                    <p class="line-2 anim-typewriter2 header-role-mb">Full Stack Web Developer</p>
-                </div>
+        </div>
+        <!---Mobile-->
+        <div class="row d-xl-none">
+            <div class="col-12">
+                <p class="line-1 anim-typewriter header-name-mb">Murray Bealby</p>
+                <p class="line-2 anim-typewriter2 header-role-mb">Full Stack Web Developer</p>
             </div>
-            <div class="row">
-                <div class="col-12 menu-content-intro">
-                    <div class="row text-center">
-                        <div class="col-12 about menu-content-intro-links pl-0 pr-0" id="about-reveal" style="visibility: hidden;">
-                            <a href="about.html" style="color: rgb(255, 255, 255);" class="text-uppercase">About</a>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-12 resume menu-content-intro-links pl-0 pr-0" id="resume-reveal" style="visibility: hidden;">
-                            <a href="resume.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Résumé</a>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-12 interests menu-content-intro-links pl-0 pr-0" id="interests-reveal" style="visibility: hidden;">
-                            <a href="interests.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Interests</a>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-12 contact menu-content-intro-links pl-0 pr-0" id="contact-reveal" style="visibility: hidden;">
-                            <a href="contact.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Contact</a>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-12 projects menu-content-intro-links pl-0 pr-0" id="projects-reveal" style="visibility: hidden;">
-                            <a href="github.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Projects</a>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 menu-content-intro">
+                <div class="row text-center">
+                    <div class="col-12 about menu-content-intro-links pl-0 pr-0" id="about-reveal"
+                        style="visibility: hidden;">
+                        <a href="about.html" style="color: rgb(255, 255, 255);" class="text-uppercase">About</a>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12">
-                    <p class="rubberBand text-center decoration rubberband-text" id="cv-reveal" style="font-weight: 600; font-size: 20px; visibility: hidden;">
-                        Download My CV<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;<i class="fa fa-download fa-1x rubberband-text" aria-hidden="true"></i></a>
-                    </p>
+                <div class="row text-center">
+                    <div class="col-12 resume menu-content-intro-links pl-0 pr-0" id="resume-reveal"
+                        style="visibility: hidden;">
+                        <a href="resume.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Résumé</a>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12 skip">
-                    <p class="text-center">
-                        SKIP&ensp;<a href="about.html"><i class="fas fa-times"></i></a>
-                    </p>
+                <div class="row text-center">
+                    <div class="col-12 interests menu-content-intro-links pl-0 pr-0" id="interests-reveal"
+                        style="visibility: hidden;">
+                        <a href="interests.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Interests</a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 contact menu-content-intro-links pl-0 pr-0" id="contact-reveal"
+                        style="visibility: hidden;">
+                        <a href="contact.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Contact</a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 projects menu-content-intro-links pl-0 pr-0" id="projects-reveal"
+                        style="visibility: hidden;">
+                        <a href="github.html" style="color: rgb(255, 255, 255);" class="text-uppercase">Projects</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <p class="rubberBand text-center decoration rubberband-text" id="cv-reveal"
+                    style="font-weight: 600; font-size: 20px; visibility: hidden;">
+                    Download My CV<a href="assets/cv/murray-bealby.pdf" target="_blank">&ensp;<i
+                            class="fa fa-download fa-1x rubberband-text" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 skip">
+                <p class="text-center">
+                    SKIP&ensp;<a href="about.html"><i class="fas fa-times"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <script src="assets/js/navbar.js"></script>
-        <script src="assets/js/scroll.js"></script>
-        <script src="assets/js/email.js"></script>
-        <script src="assets/js/reveal.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
 </html>
