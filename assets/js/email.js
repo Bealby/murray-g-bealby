@@ -19,7 +19,8 @@ function sendMail(contactForm) {
         },
         function(error) {
             // Message Alert for 'Message Fail'
-            swal("Message Fail", "Please check connection and try again", "error");
+            swal("Message Fail", "Please check connection and try again",
+                 "error");
             console.log("FAILED", error);
             setTimeout(function(){
             window.location.reload(1);
