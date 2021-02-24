@@ -379,7 +379,7 @@
      transform: translateY(-50%);
 }
  .anim-typewriter {
-     animation: animated-text 2.5s steps(30) 0.5s 1 normal both;
+     animation: animated-text 1.5s steps(30) 0.5s 1 normal both;
 }
  .anim-typewriter-dt {
      animation: animated-text 6s steps(60) 0.5s 1 normal both;
@@ -396,10 +396,10 @@
      transform: translateY(-50%);
 }
  .anim-typewriter2 {
-     animation: animated-text 2.5s steps(40) 3s 1 normal both;
+     animation: animated-text 1.9s steps(40) 2s 1 normal both;
 }
  .anim-typewriter2-dt {
-     animation: animated-text 8s steps(70) 2s 1 normal both;
+     animation: animated-text 8.5s steps(70) 2s 1 normal both;
 }
 /* Typewriter */
  @keyframes animated-text {
