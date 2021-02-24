@@ -382,7 +382,7 @@
      animation: animated-text 2.5s steps(30) 0.5s 1 normal both;
 }
  .anim-typewriter-dt {
-     animation: animated-text 8s steps(60) 0.5s 1 normal both;
+     animation: animated-text 6s steps(60) 0.5s 1 normal both;
 }
 /* Role */
  .line-2 {
@@ -399,7 +399,7 @@
      animation: animated-text 2.5s steps(40) 3s 1 normal both;
 }
  .anim-typewriter2-dt {
-     animation: animated-text 8s steps(70) 3s 1 normal both;
+     animation: animated-text 8s steps(70) 2s 1 normal both;
 }
 /* Typewriter */
  @keyframes animated-text {
@@ -436,19 +436,19 @@
     }
 }
  .about {
-     animation: mymove 2s 6s;
+     animation: mymove 2s 4s;
 }
  .resume {
-     animation: mymove 2s 7s;
+     animation: mymove 2s 5s;
 }
  .interests {
-     animation: mymove 2s 8s;
+     animation: mymove 2s 6s;
 }
  .contact {
-     animation: mymove 2s 9s;
+     animation: mymove 2s 7s;
 }
  .projects {
-     animation: mymove 2s 10s;
+     animation: mymove 2s 8s;
 }
 /*---Rubberband---*/
  .rubberband-text{
@@ -463,7 +463,7 @@
      -webkit-animation-fill-mode: both;
      animation-fill-mode: both;
      -webkit-animation-delay: both;
-     animation-delay: 12s;
+     animation-delay: 10s;
 }
  @-webkit-keyframes rubberBand {
      0% {
